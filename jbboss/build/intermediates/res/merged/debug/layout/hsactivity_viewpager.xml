@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_repeat"
+    android:orientation="vertical" >
+    
+    <com.viewpagerindicator.TitlePageIndicator
+        android:id="@+id/ucIndicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        app:linePosition="top"
+        />
+    
+    <com.hungsum.framework.ui.controls.UcViewPager
+        android:id="@+id/ucViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.hungsum.framework.ui.controls.UcViewPager>
+	
+	<!-- 
+	<com.viewpagerindicator.TitlePageIndicator
+        android:id="@+id/ucIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="5dip"
+        app:lineWidth="30dp"
+        app:selectedColor="@color/Black"
+        app:strokeWidth="4dp"
+        app:unselectedColor="#FF888888" >
+    </com.viewpagerindicator.TitlePageIndicator>
+ 	-->
+    
+    
+</LinearLayout>

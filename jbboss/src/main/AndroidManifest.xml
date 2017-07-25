@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hungsum.jbboss"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="2017.2.4.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <application
+        android:name="com.hungsum.jbboss.componments.Jbboss_Application"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- ********************************框架开始********************************* -->
+        
+        <!-- 欢迎界面 -->
+        <activity
+            android:name="com.hungsum.jbboss.ui.activities.Activity_Welcome"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录界面 -->
+        <activity
+            android:name="com.hungsum.jbboss.ui.activities.Activity_Login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hungsum.framework.intent.action.LOGIN" >
+                </action>
+
+                <category android:name="com.hungsum.jbboss" >
+                </category>
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.hungsum.jbboss.ui.activities.Activity_Jbboss_Main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hungsum.framework.intent.action.MAIN" >
+                </action>
+
+                <category android:name="com.hungsum.jbboss" />
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        
+        <!-- 查询条件 -->
+        <activity
+            android:name="com.hungsum.framework.ui.activities.HsActivity_QueryCondition"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hungsum.framework.intent.action.QUERYCONDITION" ></action>
+                <category android:name="com.hungsum.jbboss" />
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        
+        <!-- 查询结果 -->
+        <activity
+            android:name="com.hungsum.framework.ui.activities.HsActivity_QueryResult"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 配置界面 -->
+        <activity
+            android:name="com.hungsum.framework.ui.activities.HsActivity_Config"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.hungsum.framework.ui.activities.HsActivity_ChangePassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 图表 -->
+        <activity android:name="org.achartengine.GraphicalActivity" />
+
+        <!-- 图片Grid浏览 -->
+        <activity
+            android:name="com.hungsum.framework.ui.activities.HsActivity_Grid_HsBitmap"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 图片ViewPager浏览 -->
+        <activity
+            android:name="com.hungsum.framework.ui.activities.HsActivity_ShowImages"
+            android:screenOrientation="portrait">
+        </activity>        
+        <!-- 扫描条码 -->
+        <activity
+            android:name="com.hungsum.framework.zxing.activity.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- ********************************框架结束********************************* -->
+        
+        <!-- ********************************HSOA开始********************************* -->
+
+        <!-- 人员管理 -->
+
+		<!-- 人员档案 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRyda"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_DJ_HsRyda"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 劳动合同 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRyldht"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_DJ_HsRyldht"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 人员部门调动 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRybmddjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_DJ_HsRybmddjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 人员职务调动 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRyzwddjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_DJ_HsRyzwddjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 人员奖惩记录 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRyjcjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_DJ_HsRyjcjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 人员休假 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRyxjjl_Operation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRyxjjl_Confirm"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_DJ_HsRyxjjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 人员状态变化 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRyztbhjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_DJ_HsRyztbhjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 人员生涯记录 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_List_HsRysyjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.rygl.HsActivity_DJ_HsRysyjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 车辆管理 -->
+        
+        <!-- 车辆档案 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_List_HsClda"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_DJ_HsClda"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 车辆部门调动记录 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_List_HsClbmddjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_DJ_HsClbmddjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 车辆维修保养记录 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_List_HsClwbjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_DJ_HsClwbjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 车辆保险记录 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_List_HsClbxjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_DJ_HsClbxjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 车辆行驶记录 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_List_HsClxsjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_DJ_HsClxsjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 车辆状态变化记录 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_List_HsClztbhjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_DJ_HsClztbhjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 车辆生涯记录 -->
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_List_HsClsyjl"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.hungsum.oa.ui.activities.clgl.HsActivity_DJ_HsClsyjl"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 工作流 -->
+        
+        <!-- 流程  待办事项-->
+
+        <!-- 流程  审批记录列表-->
+        <activity
+            android:name="com.hungsum.oa.workflow.ui.activities.HsActivity_List_HsLcspjls"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 流程  审批记录-->
+        <activity
+            android:name="com.hungsum.oa.workflow.ui.activities.HsActivity_DJ_HsLcspjl"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 流程  审批步骤-->
+        <activity
+            android:name="com.hungsum.oa.workflow.ui.activities.HsActivity_DJ_HsLcbz"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 流程  自定义流程单据-->
+        <activity
+            android:name="com.hungsum.oa.workflow.ui.activities.HsActivity_List_HsUserLcdj"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.hungsum.oa.workflow.ui.activities.HsActivity_DJ_HsUserLcdj"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- HS费用审批单 -->
+        <activity
+            android:name="com.hungsum.oa.workflow.ui.activities.HsActivity_List_HsFyspd"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.hungsum.oa.workflow.ui.activities.HsActivity_DJ_HsFyspd"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- ********************************HSOA结束********************************* -->
+        
+
+        <!-- 佳宝客户字典 -->
+        <activity
+            android:name="com.hungsum.jbboss.ui.activities.Activity_List_JbKhzd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hungsum.jbboss.ui.activities.Activity_DJ_JbKhzd"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 佳宝送奶员订单 -->
+        <activity
+            android:name="com.hungsum.jbboss.ui.activities.Activity_List_JbSnydndj"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hungsum.jbboss.ui.activities.Activity_DJ_JbSnydndj"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hungsum.jbboss.ui.activities.Activity_DJ_JbSnydndjmx"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        </application>
+        
+</manifest>

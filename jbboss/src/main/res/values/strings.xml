@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">佳宝BOSS</string>
+    <!-- 
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="msg_error">ERROR</string>
+    <string name="msg_data">DATA</string>
+    <string name="str_changepwd">更换密码</string>
+    <string name="key_changepws">ChangePassword</string>
+    <string name="str_changeUser">更换用户</string>
+    <string name="key_changeUser">ChangeUser</string>
+    <string name="str_quit">退出</string>
+    <string name="key_quit">Quit</string>
+     -->
+
+    <!-- sysFragment -->
+
+    <!-- xsFragment -->
+    <string name="str_xsthtjcx">销售提货统计查询</string>
+    <string name="key_xsthtjcx">Q_XSTHTJCX</string>
+    <string name="str_xsjgcx">销售价格查询</string>
+    <string name="key_xsjgcx">Q_XSJGCX</string>
+    <string name="str_wlyecx">物料余额查询</string>
+    <string name="key_wlyecx">Q_WLYECX</string>
+    <string name="str_bmxsthtjb_week">近期销售提货统计表</string>
+    <string name="key_bmxsthtjb_week">C_L_BMXSTHTJB_WEEK</string>
+    <string name="str_gbdcx">过磅单查询</string>
+    <string name="key_gbdcx">Q_GBDCX</string>
+    <string name="str_jydcx">检验单查询</string>
+    <string name="key_jydcx">Q_JYDCX</string>
+    <string name="str_jjcx">计价查询</string>
+    <string name="key_jjcx">Q_JJCX</string>
+    <string name="str_nkhzb">奶款汇总表</string>
+    <string name="key_nkhzb">Q_NKHZB</string>
+    <string name="str_dwsnltjb">单位送奶量统计表</string>
+    <string name="key_dwsnltjb">C_L_DWSNLTJB</string>
+    <string name="str_jhdxdcx">检核兑现单查询</string>
+    <string name="key_jhdxdcx">Q_JHDXDCX</string>
+    <string name="str_jhdxdmxcx">检核兑现单明细查询</string>
+    <string name="key_jhdxdmxcx">Q_JHDXDMXCX</string>
+    <string name="str_jhdxdkhhzcx">检核兑现单客户汇总查询</string>
+    <string name="key_jhdxdkhhzcx">Q_JHDXDKHHZCX</string>
+    
+	<!--
+    <string name="comm_logindata">LoginData</string>
+    <string name="title_activity_hs_tab">HsTabActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_datetime">DatetimeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="cache_username">USERNAME</string>
+    <string name="cache_userbh">USERBH</string>
+    <string name="cache_progressId">PROGRESSID</string>
+    <string name="str_share">分享一下</string>
+    <string name="str_search">查找</string>
+    <string name="str_please_insert_username">请输入用户名</string>
+    <string name="str_please_insert_password">请输入密码</string>
+    <string name="str_remember_password">记住密码</string>
+    <string name="str_star">*</string>
+    <string name="str_change_password">修改密码</string>
+    <string name="str_login">登录</string>
+    <string name="str_query">查询</string>
+    <string name="title_activity_activity__jbcmp__main">Activity_JBCMP_Main</string>
+	-->    
+
+
+</resources>
