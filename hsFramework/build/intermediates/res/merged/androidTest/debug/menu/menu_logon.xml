@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/config"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/collections_view_as_grid"
+        android:title="@string/str_config"/>
+
+    <item
+        android:id="@+id/login"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:icon="@drawable/navigation_accept"
+        android:title="@string/str_login"/>
+
+</menu>

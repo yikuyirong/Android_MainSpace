@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\release\\menu\\menu_query_list.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\menu\\menu_query_list.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\release\\menu\\menu_query_contidition.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\menu\\menu_query_contidition.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\release\\menu\\menu_logon.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\menu\\menu_logon.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\release\\menu\\menu_default.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\menu\\menu_default.xml"
+    }
+]

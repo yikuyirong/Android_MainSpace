@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_delete_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_delete_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_darkorange_orange_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_darkorange_orange_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\background_radius.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\background_radius.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_darkgreen_green_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_darkgreen_green_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_lime_limegreen_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_lime_limegreen_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\background_repeat.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\background_repeat.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_darkcyan_cyan_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_darkcyan_cyan_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_darkblue_blue_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_darkblue_blue_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_modify_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_modify_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_darkred_red_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_darkred_red_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_submit_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_submit_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_confirm_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_confirm_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vpi__tab_indicator.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\viewPagerIndicator\\build\\intermediates\\bundles\\default\\res\\drawable\\vpi__tab_indicator.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\slider_button_hotpink_deeppink_selector.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\debug\\res\\drawable\\slider_button_hotpink_deeppink_selector.xml"
+    }
+]

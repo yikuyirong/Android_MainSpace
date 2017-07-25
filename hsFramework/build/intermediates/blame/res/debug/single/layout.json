@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\hsactivity_viewpager.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\hsactivity_viewpager.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\control_list_file_1.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\control_list_file_1.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\control_gridview_bitmap.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\control_gridview_bitmap.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\write_pad.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\write_pad.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\control_list_roleuser_1.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\control_list_roleuser_1.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\control_list_keyvalue_2.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\control_list_keyvalue_2.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\control_viewpager.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\control_viewpager.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\hsactivity_zd.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\hsactivity_zd.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\hsfragment_tile.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\hsfragment_tile.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\activity_capture.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\activity_capture.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\control_gridview_item.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\control_gridview_item.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\hsactivity_list.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\hsactivity_list.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\hsactivity_login.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\hsactivity_login.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\hsactivity_grid.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\hsactivity_grid.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\control_ucform.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\control_ucform.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\debug\\layout\\control_list_keyvalue_1.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\layout\\control_list_keyvalue_1.xml"
+    }
+]

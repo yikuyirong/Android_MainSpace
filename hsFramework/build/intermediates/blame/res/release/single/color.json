@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\release\\color\\vpi__light_theme.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\viewPagerIndicator\\build\\intermediates\\bundles\\default\\res\\color\\vpi__light_theme.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\release\\color\\vpi__dark_theme.xml",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\viewPagerIndicator\\build\\intermediates\\bundles\\default\\res\\color\\vpi__dark_theme.xml"
+    }
+]

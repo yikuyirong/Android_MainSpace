@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <drawable name="AliceBlue">#FFF0F8FF</drawable>
+    <drawable name="AntiqueWhite">#FFFAEBD7</drawable>
+    <drawable name="Aqua">#FF00FFFF</drawable>
+    <drawable name="Aquamarine">#FF7FFFD4</drawable>
+    <drawable name="Azure">#FFF0FFFF</drawable>
+    <drawable name="Beige">#FFF5F5DC</drawable>
+    <drawable name="Bisque">#FFFFE4C4</drawable>
+    <drawable name="Black">#FF000000</drawable>
+    <drawable name="BlanchedAlmond">#FFFFEBCD</drawable>
+    <drawable name="Blue">#FF0000FF</drawable>
+    <drawable name="BlueViolet">#FF8A2BE2</drawable>
+    <drawable name="Brown">#FFA52A2A</drawable>
+    <drawable name="BurlyWood">#FFDEB887</drawable>
+    <drawable name="CadetBlue">#FF5F9EA0</drawable>
+    <drawable name="Chartreuse">#FF7FFF00</drawable>
+    <drawable name="Chocolate">#FFD2691E</drawable>
+    <drawable name="Coral">#FFFF7F50</drawable>
+    <drawable name="CornflowerBlue">#FF6495ED</drawable>
+    <drawable name="Cornsilk">#FFFFF8DC</drawable>
+    <drawable name="Crimson">#FFDC143C</drawable>
+    <drawable name="Cyan">#FF00FFFF</drawable>
+    <drawable name="DarkBlue">#FF00008B</drawable>
+    <drawable name="DarkCyan">#FF008B8B</drawable>
+    <drawable name="DarkGoldenRod">#FFB8860B</drawable>
+    <drawable name="DarkGray">#FFA9A9A9</drawable>
+    <drawable name="DarkGreen">#FF006400</drawable>
+    <drawable name="DarkGrey">#FFA9A9A9</drawable>
+    <drawable name="DarkKhaki">#FFBDB76B</drawable>
+    <drawable name="DarkMagenta">#FF8B008B</drawable>
+    <drawable name="DarkOliveGreen">#FF556B2F</drawable>
+    <drawable name="DarkOrange">#FFFF8C00</drawable>
+    <drawable name="DarkOrchid">#FF9932CC</drawable>
+    <drawable name="DarkRed">#FF8B0000</drawable>
+    <drawable name="DarkSalmon">#FFE9967A</drawable>
+    <drawable name="DarkSeaGreen">#FF8FBC8F</drawable>
+    <drawable name="DarkSlateBlue">#FF483D8B</drawable>
+    <drawable name="DarkSlateGray">#FF2F4F4F</drawable>
+    <drawable name="DarkSlateGrey">#FF2F4F4F</drawable>
+    <drawable name="DarkTurquoise">#FF00CED1</drawable>
+    <drawable name="DarkViolet">#FF9400D3</drawable>
+    <drawable name="DeepPink">#FFFF1493</drawable>
+    <drawable name="DeepSkyBlue">#FF00BFFF</drawable>
+    <drawable name="DimGray">#FF696969</drawable>
+    <drawable name="DimGrey">#FF696969</drawable>
+    <drawable name="DodgerBlue">#FF1E90FF</drawable>
+    <drawable name="FireBrick">#FFB22222</drawable>
+    <drawable name="FloralWhite">#FFFFFAF0</drawable>
+    <drawable name="ForestGreen">#FF228B22</drawable>
+    <drawable name="Fuchsia">#FFFF00FF</drawable>
+    <drawable name="Gainsboro">#FFDCDCDC</drawable>
+    <drawable name="GhostWhite">#FFF8F8FF</drawable>
+    <drawable name="Gold">#FFFFD700</drawable>
+    <drawable name="GoldenRod">#FFDAA520</drawable>
+    <drawable name="Gray">#FF808080</drawable>
+    <drawable name="Green">#FF008000</drawable>
+    <drawable name="GreenYellow">#FFADFF2F</drawable>
+    <drawable name="Grey">#FF808080</drawable>
+    <drawable name="HoneyDew">#FFF0FFF0</drawable>
+    <drawable name="HotPink">#FFFF69B4</drawable>
+    <drawable name="IndianRed">#FFCD5C5C</drawable>
+    <drawable name="Indigo">#FF4B0082</drawable>
+    <drawable name="Ivory">#FFFFFFF0</drawable>
+    <drawable name="Khaki">#FFF0E68C</drawable>
+    <drawable name="Lavender">#FFE6E6FA</drawable>
+    <drawable name="LavenderBlush">#FFFFF0F5</drawable>
+    <drawable name="LawnGreen">#FF7CFC00</drawable>
+    <drawable name="LemonChiffon">#FFFFFACD</drawable>
+    <drawable name="LightBlue">#FFADD8E6</drawable>
+    <drawable name="LightCoral">#FFF08080</drawable>
+    <drawable name="LightCyan">#FFE0FFFF</drawable>
+    <drawable name="LightGoldenRodYellow">#FFFAFAD2</drawable>
+    <drawable name="LightGray">#FFD3D3D3</drawable>
+    <drawable name="LightGreen">#FF90EE90</drawable>
+    <drawable name="LightGrey">#FFD3D3D3</drawable>
+    <drawable name="LightPink">#FFFFB6C1</drawable>
+    <drawable name="LightSalmon">#FFFFA07A</drawable>
+    <drawable name="LightSeaGreen">#FF20B2AA</drawable>
+    <drawable name="LightSkyBlue">#FF87CEFA</drawable>
+    <drawable name="LightSlateGray">#FF778899</drawable>
+    <drawable name="LightSlateGrey">#FF778899</drawable>
+    <drawable name="LightSteelBlue">#FFB0C4DE</drawable>
+    <drawable name="LightYellow">#FFFFFFE0</drawable>
+    <drawable name="Lime">#FF00FF00</drawable>
+    <drawable name="LimeGreen">#FF32CD32</drawable>
+    <drawable name="Linen">#FFFAF0E6</drawable>
+    <drawable name="Magenta">#FFFF00FF</drawable>
+    <drawable name="Maroon">#FF800000</drawable>
+    <drawable name="MediumAquaMarine">#FF66CDAA</drawable>
+    <drawable name="MediumBlue">#FF0000CD</drawable>
+    <drawable name="MediumOrchid">#FFBA55D3</drawable>
+    <drawable name="MediumPurple">#FF9370D8</drawable>
+    <drawable name="MediumSeaGreen">#FF3CB371</drawable>
+    <drawable name="MediumSlateBlue">#FF7B68EE</drawable>
+    <drawable name="MediumSpringGreen">#FF00FA9A</drawable>
+    <drawable name="MediumTurquoise">#FF48D1CC</drawable>
+    <drawable name="MediumVioletRed">#FFC71585</drawable>
+    <drawable name="MidnightBlue">#FF191970</drawable>
+    <drawable name="MintCream">#FFF5FFFA</drawable>
+    <drawable name="MistyRose">#FFFFE4E1</drawable>
+    <drawable name="Moccasin">#FFFFE4B5</drawable>
+    <drawable name="NavajoWhite">#FFFFDEAD</drawable>
+    <drawable name="Navy">#FF000080</drawable>
+    <drawable name="OldLace">#FFFDF5E6</drawable>
+    <drawable name="Olive">#FF808000</drawable>
+    <drawable name="OliveDrab">#FF6B8E23</drawable>
+    <drawable name="Orange">#FFFFA500</drawable>
+    <drawable name="OrangeRed">#FFFF4500</drawable>
+    <drawable name="Orchid">#FFDA70D6</drawable>
+    <drawable name="PaleGoldenRod">#FFEEE8AA</drawable>
+    <drawable name="PaleGreen">#FF98FB98</drawable>
+    <drawable name="PaleTurquoise">#FFAFEEEE</drawable>
+    <drawable name="PaleVioletRed">#FFD87093</drawable>
+    <drawable name="PapayaWhip">#FFFFEFD5</drawable>
+    <drawable name="PeachPuff">#FFFFDAB9</drawable>
+    <drawable name="Peru">#FFCD853F</drawable>
+    <drawable name="Pink">#FFFFC0CB</drawable>
+    <drawable name="Plum">#FFDDA0DD</drawable>
+    <drawable name="PowderBlue">#FFB0E0E6</drawable>
+    <drawable name="Purple">#FF800080</drawable>
+    <drawable name="Red">#FFFF0000</drawable>
+    <drawable name="RosyBrown">#FFBC8F8F</drawable>
+    <drawable name="RoyalBlue">#FF4169E1</drawable>
+    <drawable name="SaddleBrown">#FF8B4513</drawable>
+    <drawable name="Salmon">#FFFA8072</drawable>
+    <drawable name="SandyBrown">#FFF4A460</drawable>
+    <drawable name="SeaGreen">#FF2E8B57</drawable>
+    <drawable name="SeaShell">#FFFFF5EE</drawable>
+    <drawable name="Sienna">#FFA0522D</drawable>
+    <drawable name="Silver">#FFC0C0C0</drawable>
+    <drawable name="SkyBlue">#FF87CEEB</drawable>
+    <drawable name="SlateBlue">#FF6A5ACD</drawable>
+    <drawable name="SlateGray">#FF708090</drawable>
+    <drawable name="SlateGrey">#FF708090</drawable>
+    <drawable name="Snow">#FFFFFAFA</drawable>
+    <drawable name="SpringGreen">#FF00FF7F</drawable>
+    <drawable name="SteelBlue">#FF4682B4</drawable>
+    <drawable name="Tan">#FFD2B48C</drawable>
+    <drawable name="Teal">#FF008080</drawable>
+    <drawable name="Thistle">#FFD8BFD8</drawable>
+    <drawable name="Tomato">#FFFF6347</drawable>
+    <drawable name="Turquoise">#FF40E0D0</drawable>
+    <drawable name="Violet">#FFEE82EE</drawable>
+    <drawable name="Wheat">#FFF5DEB3</drawable>
+    <drawable name="White">#FFFFFFFF</drawable>
+    <drawable name="WhiteSmoke">#FFF5F5F5</drawable>
+    <drawable name="Yellow">#FFFFFF00</drawable>
+    <drawable name="YellowGreen">#FF9ACD32</drawable>
+    <drawable name="black_overlay">#66000000</drawable>
+    <drawable name="possible_result_points">#c0ffff00</drawable>
+    <drawable name="result_view">#b0000000</drawable>
+    <drawable name="viewfinder_mask">#60000000</drawable>
+    <item name="about_version_code" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="split" type="id">false</item>
+    <item name="webview" type="id"/>
+    <integer name="menu_back">00002</integer>
+    <integer name="menu_logon">00001</integer>
+    <integer name="menu_retrieve">00003</integer>
+    <integer name="msg_data">0</integer>
+    <integer name="msg_error">-1</integer>
+    <string name="cache_progressId">PROGRESSID</string>
+    <string name="cache_userbh">USERBH</string>
+    <string name="cache_username">USERNAME</string>
+    <string name="comm_logindata">LoginData</string>
+    <string name="key_changeUser">ChangeUser</string>
+    <string name="key_changepws">ChangePassword</string>
+    <string name="key_quit">Quit</string>
+    <string name="msg_data">DATA</string>
+    <string name="msg_error">ERROR</string>
+    <string name="str_audit">审核</string>
+    <string name="str_browse">浏览</string>
+    <string name="str_changeUser">更换用户</string>
+    <string name="str_changepwd">更换密码</string>
+    <string name="str_changerole">更换角色</string>
+    <string name="str_chooseFile">选择文件</string>
+    <string name="str_chooseImage">选择图片</string>
+    <string name="str_config">设置</string>
+    <string name="str_confirm">确认</string>
+    <string name="str_delete">删除</string>
+    <string name="str_download">下载</string>
+    <string name="str_edit">编辑</string>
+    <string name="str_enter">确定</string>
+    <string name="str_login">登录</string>
+    <string name="str_modify">修改</string>
+    <string name="str_new">新增</string>
+    <string name="str_overlc">终止流程</string>
+    <string name="str_please_choose_db">请选择账套</string>
+    <string name="str_please_insert_password">请输入密码</string>
+    <string name="str_please_insert_username">请输入用户名</string>
+    <string name="str_query">查询</string>
+    <string name="str_quit">退出</string>
+    <string name="str_remember_password">记住密码</string>
+    <string name="str_retrieve">刷新</string>
+    <string name="str_search">查找</string>
+    <string name="str_share">分享</string>
+    <string name="str_star">*</string>
+    <string name="str_startfreelc">启动自由流程</string>
+    <string name="str_startregularlc">启动规则流程</string>
+    <string name="str_submit">提交</string>
+    <string name="str_takePhoto">拍照</string>
+    <string name="str_unaudit">取消审核</string>
+    <string name="str_unconfirm">取消确认</string>
+    <string name="str_unsubmit">取消提交</string>
+    <string name="userdo1">自定义1</string>
+    <string name="userdo2">自定义2</string>
+    <string name="userdo3">自定义3</string>
+    <string name="userdo4">自定义4</string>
+    <string name="userdo5">自定义5</string>
+    <string name="userdo6">自定义6</string>
+    <style name="AppBaseTheme" parent="android:Theme.Black">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!--  -->
+    </style>
+</resources>

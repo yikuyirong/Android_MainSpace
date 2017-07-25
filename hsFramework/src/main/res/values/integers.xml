@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="menu_logon">00001</integer>
+    <integer name="menu_back">00002</integer>
+    <integer name="menu_retrieve">00003</integer>
+    
+    <integer name="msg_error">-1</integer>
+    <integer name="msg_data">0</integer>
+
+</resources>

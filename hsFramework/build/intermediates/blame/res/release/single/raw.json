@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\release\\raw\\realm_properties",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\raw\\realm_properties"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\res\\merged\\release\\raw\\beep.ogg",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\src\\main\\res\\raw\\beep.ogg"
+    }
+]

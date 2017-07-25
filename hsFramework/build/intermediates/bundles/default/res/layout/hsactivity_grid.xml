@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_repeat"
+    android:orientation="vertical" >
+
+    <com.hungsum.framework.ui.controls.UcGridView
+        android:id="@+id/ucGridView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:numColumns="auto_fit" >
+
+    </com.hungsum.framework.ui.controls.UcGridView>
+
+</LinearLayout>

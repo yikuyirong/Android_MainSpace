@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="配置">
+    <PreferenceCategory android:title="网络配置">
+        <EditTextPreference android:title="请输入网络服务地址" android:key="wsdl" android:summary="网络服务地址是访问远程网络的入口"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_repeat"
+    android:padding="20dp" >
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+		android:background="@drawable/background_radius"
+        android:gravity="top|fill_vertical"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <com.hungsum.framework.ui.controls.UcTextBox
+            android:id="@+id/ucUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_please_insert_username"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp" >
+
+            <requestFocus />
+        </com.hungsum.framework.ui.controls.UcTextBox>
+
+        <com.hungsum.framework.ui.controls.UcPassword
+            android:id="@+id/ucPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_please_insert_password" />
+
+        <com.hungsum.framework.ui.controls.UcMultiRadio
+            android:id="@+id/ucDb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/str_please_choose_db" />
+
+        <CheckBox
+            android:id="@+id/ucSavePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/str_remember_password" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ucSerialNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="1"/>
+
+</RelativeLayout>
