@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="boolean" name="centered"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <color name="AliceBlue">#F0F8FF</color>
+    <color name="AntiqueWhite">#FAEBD7</color>
+    <color name="Aqua">#00FFFF</color>
+    <color name="Aquamarine">#7FFFD4</color>
+    <color name="Azure">#F0FFFF</color>
+    <color name="Beige">#F5F5DC</color>
+    <color name="Bisque">#FFE4C4</color>
+    <color name="Black">#000000</color>
+    <color name="BlanchedAlmond">#FFEBCD</color>
+    <color name="Blue">#0000FF</color>
+    <color name="BlueViolet">#8A2BE2</color>
+    <color name="Brown">#A52A2A</color>
+    <color name="BurlyWood">#DEB887</color>
+    <color name="CadetBlue">#5F9EA0</color>
+    <color name="Chartreuse">#7FFF00</color>
+    <color name="Chocolate">#D2691E</color>
+    <color name="Coral">#FF7F50</color>
+    <color name="CornflowerBlue">#6495ED</color>
+    <color name="Cornsilk">#FFF8DC</color>
+    <color name="Crimson">#DC143C</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="DarkBlue">#00008B</color>
+    <color name="DarkCyan">#008B8B</color>
+    <color name="DarkGoldenRod">#B8860B</color>
+    <color name="DarkGray">#A9A9A9</color>
+    <color name="DarkGreen">#6400</color>
+    <color name="DarkGrey">#A9A9A9</color>
+    <color name="DarkKhaki">#BDB76B</color>
+    <color name="DarkMagenta">#8B008B</color>
+    <color name="DarkOliveGreen">#556B2F</color>
+    <color name="DarkOrchid">#9932CC</color>
+    <color name="DarkRed">#8B0000</color>
+    <color name="DarkSalmon">#E9967A</color>
+    <color name="DarkSeaGreen">#8FBC8F</color>
+    <color name="DarkSlateBlue">#483D8B</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="DarkSlateGrey">#2F4F4F</color>
+    <color name="DarkTurquoise">#00CED1</color>
+    <color name="DarkViolet">#9400D3</color>
+    <color name="Darkorange">#FF8C00</color>
+    <color name="DeepPink">#FF1493</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="DimGray">#696969</color>
+    <color name="DimGrey">#696969</color>
+    <color name="DodgerBlue">#1E90FF</color>
+    <color name="FireBrick">#B22222</color>
+    <color name="FloralWhite">#FFFAF0</color>
+    <color name="ForestGreen">#228B22</color>
+    <color name="Fuchsia">#FF00FF</color>
+    <color name="Gainsboro">#DCDCDC</color>
+    <color name="GhostWhite">#F8F8FF</color>
+    <color name="Gold">#FFD700</color>
+    <color name="GoldenRod">#DAA520</color>
+    <color name="Gray">#808080</color>
+    <color name="Green">#8000</color>
+    <color name="GreenYellow">#ADFF2F</color>
+    <color name="Grey">#808080</color>
+    <color name="HoneyDew">#F0FFF0</color>
+    <color name="HotPink">#FF69B4</color>
+    <color name="IndianRed">#CD5C5C</color>
+    <color name="Indigo">#4B0082</color>
+    <color name="Ivory">#FFFFF0</color>
+    <color name="Khaki">#F0E68C</color>
+    <color name="Lavender">#E6E6FA</color>
+    <color name="LavenderBlush">#FFF0F5</color>
+    <color name="LawnGreen">#7CFC00</color>
+    <color name="LemonChiffon">#FFFACD</color>
+    <color name="LightBlue">#ADD8E6</color>
+    <color name="LightCoral">#F08080</color>
+    <color name="LightCyan">#E0FFFF</color>
+    <color name="LightGoldenRodYellow">#FAFAD2</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="LightGreen">#90EE90</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="LightPink">#FFB6C1</color>
+    <color name="LightSalmon">#FFA07A</color>
+    <color name="LightSeaGreen">#20B2AA</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="LightSlateGray">#778899</color>
+    <color name="LightSlateGrey">#778899</color>
+    <color name="LightSteelBlue">#B0C4DE</color>
+    <color name="LightYellow">#FFFFE0</color>
+    <color name="Lime">#00FF00</color>
+    <color name="LimeGreen">#32CD32</color>
+    <color name="Linen">#FAF0E6</color>
+    <color name="Magenta">#FF00FF</color>
+    <color name="Maroon">#800000</color>
+    <color name="MediumAquaMarine">#66CDAA</color>
+    <color name="MediumBlue">#0000CD</color>
+    <color name="MediumOrchid">#BA55D3</color>
+    <color name="MediumPurple">#9370D8</color>
+    <color name="MediumSeaGreen">#3CB371</color>
+    <color name="MediumSlateBlue">#7B68EE</color>
+    <color name="MediumSpringGreen">#00FA9A</color>
+    <color name="MediumTurquoise">#48D1CC</color>
+    <color name="MediumVioletRed">#C71585</color>
+    <color name="MidnightBlue">#191970</color>
+    <color name="MintCream">#F5FFFA</color>
+    <color name="MistyRose">#FFE4E1</color>
+    <color name="Moccasin">#FFE4B5</color>
+    <color name="NavajoWhite">#FFDEAD</color>
+    <color name="Navy">#000080</color>
+    <color name="OldLace">#FDF5E6</color>
+    <color name="Olive">#808000</color>
+    <color name="OliveDrab">#6B8E23</color>
+    <color name="Orange">#FFA500</color>
+    <color name="OrangeRed">#FF4500</color>
+    <color name="Orchid">#DA70D6</color>
+    <color name="PaleGoldenRod">#EEE8AA</color>
+    <color name="PaleGreen">#98FB98</color>
+    <color name="PaleTurquoise">#AFEEEE</color>
+    <color name="PaleVioletRed">#D87093</color>
+    <color name="PapayaWhip">#FFEFD5</color>
+    <color name="PeachPuff">#FFDAB9</color>
+    <color name="Peru">#CD853F</color>
+    <color name="Pink">#FFC0CB</color>
+    <color name="Plum">#DDA0DD</color>
+    <color name="PowderBlue">#B0E0E6</color>
+    <color name="Purple">#800080</color>
+    <color name="Red">#FF0000</color>
+    <color name="RosyBrown">#BC8F8F</color>
+    <color name="RoyalBlue">#4169E1</color>
+    <color name="SaddleBrown">#8B4513</color>
+    <color name="Salmon">#FA8072</color>
+    <color name="SandyBrown">#F4A460</color>
+    <color name="SeaGreen">#2E8B57</color>
+    <color name="SeaShell">#FFF5EE</color>
+    <color name="Sienna">#A0522D</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="SkyBlue">#87CEEB</color>
+    <color name="SlateBlue">#6A5ACD</color>
+    <color name="SlateGray">#708090</color>
+    <color name="SlateGrey">#708090</color>
+    <color name="Snow">#FFFAFA</color>
+    <color name="SpringGreen">#00FF7F</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="Tan">#D2B48C</color>
+    <color name="Teal">#8080</color>
+    <color name="Thistle">#D8BFD8</color>
+    <color name="Tomato">#FF6347</color>
+    <color name="Turquoise">#40E0D0</color>
+    <color name="Violet">#EE82EE</color>
+    <color name="Wheat">#F5DEB3</color>
+    <color name="White">#FFFFFF</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="YellowGreen">#9ACD32</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/></declare-styleable>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle">
+            <enum name="none" value="0"/>
+            <enum name="triangle" value="1"/>
+            <enum name="underline" value="2"/>
+        </attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <drawable name="AliceBlue">#FFF0F8FF</drawable>
+    <drawable name="AntiqueWhite">#FFFAEBD7</drawable>
+    <drawable name="Aqua">#FF00FFFF</drawable>
+    <drawable name="Aquamarine">#FF7FFFD4</drawable>
+    <drawable name="Azure">#FFF0FFFF</drawable>
+    <drawable name="Beige">#FFF5F5DC</drawable>
+    <drawable name="Bisque">#FFFFE4C4</drawable>
+    <drawable name="Black">#FF000000</drawable>
+    <drawable name="BlanchedAlmond">#FFFFEBCD</drawable>
+    <drawable name="Blue">#FF0000FF</drawable>
+    <drawable name="BlueViolet">#FF8A2BE2</drawable>
+    <drawable name="Brown">#FFA52A2A</drawable>
+    <drawable name="BurlyWood">#FFDEB887</drawable>
+    <drawable name="CadetBlue">#FF5F9EA0</drawable>
+    <drawable name="Chartreuse">#FF7FFF00</drawable>
+    <drawable name="Chocolate">#FFD2691E</drawable>
+    <drawable name="Coral">#FFFF7F50</drawable>
+    <drawable name="CornflowerBlue">#FF6495ED</drawable>
+    <drawable name="Cornsilk">#FFFFF8DC</drawable>
+    <drawable name="Crimson">#FFDC143C</drawable>
+    <drawable name="Cyan">#FF00FFFF</drawable>
+    <drawable name="DarkBlue">#FF00008B</drawable>
+    <drawable name="DarkCyan">#FF008B8B</drawable>
+    <drawable name="DarkGoldenRod">#FFB8860B</drawable>
+    <drawable name="DarkGray">#FFA9A9A9</drawable>
+    <drawable name="DarkGreen">#FF006400</drawable>
+    <drawable name="DarkGrey">#FFA9A9A9</drawable>
+    <drawable name="DarkKhaki">#FFBDB76B</drawable>
+    <drawable name="DarkMagenta">#FF8B008B</drawable>
+    <drawable name="DarkOliveGreen">#FF556B2F</drawable>
+    <drawable name="DarkOrange">#FFFF8C00</drawable>
+    <drawable name="DarkOrchid">#FF9932CC</drawable>
+    <drawable name="DarkRed">#FF8B0000</drawable>
+    <drawable name="DarkSalmon">#FFE9967A</drawable>
+    <drawable name="DarkSeaGreen">#FF8FBC8F</drawable>
+    <drawable name="DarkSlateBlue">#FF483D8B</drawable>
+    <drawable name="DarkSlateGray">#FF2F4F4F</drawable>
+    <drawable name="DarkSlateGrey">#FF2F4F4F</drawable>
+    <drawable name="DarkTurquoise">#FF00CED1</drawable>
+    <drawable name="DarkViolet">#FF9400D3</drawable>
+    <drawable name="DeepPink">#FFFF1493</drawable>
+    <drawable name="DeepSkyBlue">#FF00BFFF</drawable>
+    <drawable name="DimGray">#FF696969</drawable>
+    <drawable name="DimGrey">#FF696969</drawable>
+    <drawable name="DodgerBlue">#FF1E90FF</drawable>
+    <drawable name="FireBrick">#FFB22222</drawable>
+    <drawable name="FloralWhite">#FFFFFAF0</drawable>
+    <drawable name="ForestGreen">#FF228B22</drawable>
+    <drawable name="Fuchsia">#FFFF00FF</drawable>
+    <drawable name="Gainsboro">#FFDCDCDC</drawable>
+    <drawable name="GhostWhite">#FFF8F8FF</drawable>
+    <drawable name="Gold">#FFFFD700</drawable>
+    <drawable name="GoldenRod">#FFDAA520</drawable>
+    <drawable name="Gray">#FF808080</drawable>
+    <drawable name="Green">#FF008000</drawable>
+    <drawable name="GreenYellow">#FFADFF2F</drawable>
+    <drawable name="Grey">#FF808080</drawable>
+    <drawable name="HoneyDew">#FFF0FFF0</drawable>
+    <drawable name="HotPink">#FFFF69B4</drawable>
+    <drawable name="IndianRed">#FFCD5C5C</drawable>
+    <drawable name="Indigo">#FF4B0082</drawable>
+    <drawable name="Ivory">#FFFFFFF0</drawable>
+    <drawable name="Khaki">#FFF0E68C</drawable>
+    <drawable name="Lavender">#FFE6E6FA</drawable>
+    <drawable name="LavenderBlush">#FFFFF0F5</drawable>
+    <drawable name="LawnGreen">#FF7CFC00</drawable>
+    <drawable name="LemonChiffon">#FFFFFACD</drawable>
+    <drawable name="LightBlue">#FFADD8E6</drawable>
+    <drawable name="LightCoral">#FFF08080</drawable>
+    <drawable name="LightCyan">#FFE0FFFF</drawable>
+    <drawable name="LightGoldenRodYellow">#FFFAFAD2</drawable>
+    <drawable name="LightGray">#FFD3D3D3</drawable>
+    <drawable name="LightGreen">#FF90EE90</drawable>
+    <drawable name="LightGrey">#FFD3D3D3</drawable>
+    <drawable name="LightPink">#FFFFB6C1</drawable>
+    <drawable name="LightSalmon">#FFFFA07A</drawable>
+    <drawable name="LightSeaGreen">#FF20B2AA</drawable>
+    <drawable name="LightSkyBlue">#FF87CEFA</drawable>
+    <drawable name="LightSlateGray">#FF778899</drawable>
+    <drawable name="LightSlateGrey">#FF778899</drawable>
+    <drawable name="LightSteelBlue">#FFB0C4DE</drawable>
+    <drawable name="LightYellow">#FFFFFFE0</drawable>
+    <drawable name="Lime">#FF00FF00</drawable>
+    <drawable name="LimeGreen">#FF32CD32</drawable>
+    <drawable name="Linen">#FFFAF0E6</drawable>
+    <drawable name="Magenta">#FFFF00FF</drawable>
+    <drawable name="Maroon">#FF800000</drawable>
+    <drawable name="MediumAquaMarine">#FF66CDAA</drawable>
+    <drawable name="MediumBlue">#FF0000CD</drawable>
+    <drawable name="MediumOrchid">#FFBA55D3</drawable>
+    <drawable name="MediumPurple">#FF9370D8</drawable>
+    <drawable name="MediumSeaGreen">#FF3CB371</drawable>
+    <drawable name="MediumSlateBlue">#FF7B68EE</drawable>
+    <drawable name="MediumSpringGreen">#FF00FA9A</drawable>
+    <drawable name="MediumTurquoise">#FF48D1CC</drawable>
+    <drawable name="MediumVioletRed">#FFC71585</drawable>
+    <drawable name="MidnightBlue">#FF191970</drawable>
+    <drawable name="MintCream">#FFF5FFFA</drawable>
+    <drawable name="MistyRose">#FFFFE4E1</drawable>
+    <drawable name="Moccasin">#FFFFE4B5</drawable>
+    <drawable name="NavajoWhite">#FFFFDEAD</drawable>
+    <drawable name="Navy">#FF000080</drawable>
+    <drawable name="OldLace">#FFFDF5E6</drawable>
+    <drawable name="Olive">#FF808000</drawable>
+    <drawable name="OliveDrab">#FF6B8E23</drawable>
+    <drawable name="Orange">#FFFFA500</drawable>
+    <drawable name="OrangeRed">#FFFF4500</drawable>
+    <drawable name="Orchid">#FFDA70D6</drawable>
+    <drawable name="PaleGoldenRod">#FFEEE8AA</drawable>
+    <drawable name="PaleGreen">#FF98FB98</drawable>
+    <drawable name="PaleTurquoise">#FFAFEEEE</drawable>
+    <drawable name="PaleVioletRed">#FFD87093</drawable>
+    <drawable name="PapayaWhip">#FFFFEFD5</drawable>
+    <drawable name="PeachPuff">#FFFFDAB9</drawable>
+    <drawable name="Peru">#FFCD853F</drawable>
+    <drawable name="Pink">#FFFFC0CB</drawable>
+    <drawable name="Plum">#FFDDA0DD</drawable>
+    <drawable name="PowderBlue">#FFB0E0E6</drawable>
+    <drawable name="Purple">#FF800080</drawable>
+    <drawable name="Red">#FFFF0000</drawable>
+    <drawable name="RosyBrown">#FFBC8F8F</drawable>
+    <drawable name="RoyalBlue">#FF4169E1</drawable>
+    <drawable name="SaddleBrown">#FF8B4513</drawable>
+    <drawable name="Salmon">#FFFA8072</drawable>
+    <drawable name="SandyBrown">#FFF4A460</drawable>
+    <drawable name="SeaGreen">#FF2E8B57</drawable>
+    <drawable name="SeaShell">#FFFFF5EE</drawable>
+    <drawable name="Sienna">#FFA0522D</drawable>
+    <drawable name="Silver">#FFC0C0C0</drawable>
+    <drawable name="SkyBlue">#FF87CEEB</drawable>
+    <drawable name="SlateBlue">#FF6A5ACD</drawable>
+    <drawable name="SlateGray">#FF708090</drawable>
+    <drawable name="SlateGrey">#FF708090</drawable>
+    <drawable name="Snow">#FFFFFAFA</drawable>
+    <drawable name="SpringGreen">#FF00FF7F</drawable>
+    <drawable name="SteelBlue">#FF4682B4</drawable>
+    <drawable name="Tan">#FFD2B48C</drawable>
+    <drawable name="Teal">#FF008080</drawable>
+    <drawable name="Thistle">#FFD8BFD8</drawable>
+    <drawable name="Tomato">#FFFF6347</drawable>
+    <drawable name="Turquoise">#FF40E0D0</drawable>
+    <drawable name="Violet">#FFEE82EE</drawable>
+    <drawable name="Wheat">#FFF5DEB3</drawable>
+    <drawable name="White">#FFFFFFFF</drawable>
+    <drawable name="WhiteSmoke">#FFF5F5F5</drawable>
+    <drawable name="Yellow">#FFFFFF00</drawable>
+    <drawable name="YellowGreen">#FF9ACD32</drawable>
+    <drawable name="black_overlay">#66000000</drawable>
+    <drawable name="possible_result_points">#c0ffff00</drawable>
+    <drawable name="result_view">#b0000000</drawable>
+    <drawable name="viewfinder_mask">#60000000</drawable>
+    <item name="about_version_code" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="split" type="id">false</item>
+    <item name="webview" type="id"/>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <integer name="menu_back">00002</integer>
+    <integer name="menu_logon">00001</integer>
+    <integer name="menu_retrieve">00003</integer>
+    <integer name="msg_data">0</integer>
+    <integer name="msg_error">-1</integer>
+    <string name="app_name">佳宝CMP</string>
+    <string name="cache_progressId">PROGRESSID</string>
+    <string name="cache_userbh">USERBH</string>
+    <string name="cache_username">USERNAME</string>
+    <string name="comm_logindata">LoginData</string>
+    <string name="key_bmxsthtjb_week">C_L_BMXSTHTJB_WEEK</string>
+    <string name="key_changeUser">ChangeUser</string>
+    <string name="key_changepws">ChangePassword</string>
+    <string name="key_dwsnltjb">C_L_DWSNLTJB</string>
+    <string name="key_gbdcx">Q_GBDCX</string>
+    <string name="key_jhdxdcx">Q_JHDXDCX</string>
+    <string name="key_jhdxdkhhzcx">Q_JHDXDKHHZCX</string>
+    <string name="key_jhdxdmxcx">Q_JHDXDMXCX</string>
+    <string name="key_jjcx">Q_JJCX</string>
+    <string name="key_jydcx">Q_JYDCX</string>
+    <string name="key_nkhzb">Q_NKHZB</string>
+    <string name="key_quit">Quit</string>
+    <string name="key_wlyecx">Q_WLYECX</string>
+    <string name="key_xsjgcx">Q_XSJGCX</string>
+    <string name="key_xsthtjcx">Q_XSTHTJCX</string>
+    <string name="msg_data">DATA</string>
+    <string name="msg_error">ERROR</string>
+    <string name="str_audit">审核</string>
+    <string name="str_bmxsthtjb_week">近期销售提货统计表</string>
+    <string name="str_browse">浏览</string>
+    <string name="str_changeUser">更换用户</string>
+    <string name="str_changepwd">更换密码</string>
+    <string name="str_changerole">更换角色</string>
+    <string name="str_chooseFile">选择文件</string>
+    <string name="str_chooseImage">选择图片</string>
+    <string name="str_config">设置</string>
+    <string name="str_confirm">确认</string>
+    <string name="str_delete">删除</string>
+    <string name="str_download">下载</string>
+    <string name="str_dwsnltjb">单位送奶量统计表</string>
+    <string name="str_edit">编辑</string>
+    <string name="str_enter">确定</string>
+    <string name="str_gbdcx">过磅单查询</string>
+    <string name="str_jhdxdcx">检核兑现单查询</string>
+    <string name="str_jhdxdkhhzcx">检核兑现单客户汇总查询</string>
+    <string name="str_jhdxdmxcx">检核兑现单明细查询</string>
+    <string name="str_jjcx">计价查询</string>
+    <string name="str_jydcx">检验单查询</string>
+    <string name="str_login">登录</string>
+    <string name="str_modify">修改</string>
+    <string name="str_new">新增</string>
+    <string name="str_nkhzb">奶款汇总表</string>
+    <string name="str_overlc">终止流程</string>
+    <string name="str_please_choose_db">请选择账套</string>
+    <string name="str_please_insert_password">请输入密码</string>
+    <string name="str_please_insert_username">请输入用户名</string>
+    <string name="str_query">查询</string>
+    <string name="str_quit">退出</string>
+    <string name="str_remember_password">记住密码</string>
+    <string name="str_retrieve">刷新</string>
+    <string name="str_search">查找</string>
+    <string name="str_share">分享</string>
+    <string name="str_star">*</string>
+    <string name="str_startfreelc">启动自由流程</string>
+    <string name="str_startregularlc">启动规则流程</string>
+    <string name="str_submit">提交</string>
+    <string name="str_takePhoto">拍照</string>
+    <string name="str_unaudit">取消审核</string>
+    <string name="str_unconfirm">取消确认</string>
+    <string name="str_unsubmit">取消提交</string>
+    <string name="str_wlyecx">物料余额查询</string>
+    <string name="str_xsjgcx">销售价格查询</string>
+    <string name="str_xsthtjcx">销售提货统计查询</string>
+    <string name="userdo1">自定义1</string>
+    <string name="userdo2">自定义2</string>
+    <string name="userdo3">自定义3</string>
+    <string name="userdo4">自定义4</string>
+    <string name="userdo5">自定义5</string>
+    <string name="userdo6">自定义6</string>
+    <style name="AppBaseTheme" parent="android:Theme.Black">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!--  -->
+    </style>
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+    </style>
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <style name="Widget">
+    </style>
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/search" 
+        android:title=""
+        android:icon="@android:drawable/ic_menu_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="ifRoom|withText"></item>
+    <item android:id="@+id/item1" android:showAsAction="ifRoom|withText" android:title=""></item>
+    <item android:id="@+id/item2" android:showAsAction="ifRoom" android:title=""></item>
+    <item android:id="@+id/item3" android:showAsAction="ifRoom" android:title=""></item>
+    <item android:id="@+id/item4" android:showAsAction="ifRoom" android:title=""></item>
+    <item android:id="@+id/item5" android:showAsAction="ifRoom" android:title=""></item>
+    <item android:id="@+id/item6" android:showAsAction="ifRoom" android:title=""></item>
+    <item android:id="@+id/item7" android:showAsAction="ifRoom" android:title=""></item>
+    <item android:id="@+id/item8" android:showAsAction="ifRoom" android:title=""></item>
+    <item android:id="@+id/item9" android:showAsAction="ifRoom" android:title=""></item>
+    <item android:id="@+id/item10" android:showAsAction="ifRoom" android:title=""></item>
+</menu>
