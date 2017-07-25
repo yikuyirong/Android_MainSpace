@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/hsUtils/src/main/java/com/hungsum/framework/utils/HsBase64.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hsUtils/src/main/java/com/hungsum/framework/utils/HsConnectionUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hsUtils/src/main/java/com/hungsum/framework/utils/HsDBHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hsUtils/src/main/java/com/hungsum/framework/utils/HsDate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hsUtils/src/main/java/com/hungsum/framework/utils/HsExceptionListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hsUtils/src/main/java/com/hungsum/framework/utils/HsFileSize.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hsUtils/src/main/java/com/hungsum/framework/utils/HsLocationUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hsUtils/src/main/java/com/hungsum/framework/utils/HsMD5.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

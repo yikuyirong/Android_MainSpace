@@ -1,0 +1,7 @@
+include ':photoView', ':testApplication'
+include ':viewPagerIndicator'
+include ':hsUtils'
+include ':hsFramework'
+include ':hsOA'
+include ':jbcmp'
+include ':jbboss'
