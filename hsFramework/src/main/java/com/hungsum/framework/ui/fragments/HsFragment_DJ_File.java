@@ -125,9 +125,9 @@ public class HsFragment_DJ_File extends HsFragment_ZD_Annex<IHsLabelValue>
 
 		mHasCreateCompleted = true;
 		
-		if(mListener != null)
+		if(mListenerOfCreateCompletedEventListener != null)
 		{
-			mListener.action(savedInstanceState);
+			mListenerOfCreateCompletedEventListener.action(savedInstanceState);
 		}
 		
 		return rootView;
@@ -540,7 +540,7 @@ public class HsFragment_DJ_File extends HsFragment_ZD_Annex<IHsLabelValue>
 		{
 			showInformation("更新成功");
 			
-			dispatchCommEvent(EventCategory.UpdateCompleted,null);
+			triggerCommEvent(EventCategory.UpdateCompleted,null);
 		}
 	}
 
@@ -596,7 +596,7 @@ public class HsFragment_DJ_File extends HsFragment_ZD_Annex<IHsLabelValue>
 			mIsModified = false;
 			
 			//发布更新完成事件
-			dispatchCommEvent(EventCategory.UpdateCompleted, null);
+			triggerCommEvent(EventCategory.UpdateCompleted, null);
 		}
 	}
 	

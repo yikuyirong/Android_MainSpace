@@ -1,6 +1,8 @@
 package com.hungsum.jbboss.ui.activities;
 
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,15 +10,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
+import com.hungsum.framework.adapter.HsUserLabelValueAdapter;
 import com.hungsum.framework.componments.HsWSReturnObject;
+import com.hungsum.framework.events.CommEventListener;
+import com.hungsum.framework.events.CommEventObject;
 import com.hungsum.framework.interfaces.IHsLabelValue;
 import com.hungsum.framework.ui.activities.HsActivity_DJ;
 import com.hungsum.framework.ui.controls.UcChooseSingleItem;
 import com.hungsum.framework.ui.controls.UcDateBox;
 import com.hungsum.framework.ui.controls.UcFormItem;
+import com.hungsum.framework.ui.controls.UcNumericInput;
 import com.hungsum.framework.ui.controls.UcTextBox;
 import com.hungsum.framework.ui.fragments.HsFragment_ZD_Detail;
 import com.hungsum.framework.ui.fragments.HsFragment_ZD_Main;
+import com.hungsum.framework.utils.HsRound;
+import com.hungsum.jbboss.componments.JbSnyLoginData;
 import com.hungsum.jbboss.others.JbbossDjlx;
 import com.hungsum.jbboss.webservices.JbbossWebService;
 
@@ -38,6 +46,17 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 
 	// }}
 
+	private CommEventListener jeChangeEventListener = new CommEventListener(CommEventListener.EventCategory.DataChanged) {
+		@Override
+		public void EventHandler(CommEventObject object)
+		{
+			if(mDetailFragemnt != null)
+			{
+				mDetailFragemnt.setSummaryText();
+			}
+		}
+	};
+
 	@Override
 	protected void initComponent(Bundle savedInstanceState) throws Exception
 	{
@@ -45,16 +64,18 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 
 		this.setTitleSaved(JbbossDjlx.JB订奶单据);
 
-		DJParams params = new DJParams(true, true, true);
+		DJParams params = new DJParams(true, false, false);
 		params.setImagePageAllowEmpty(true);
 
 		this.setDJParams(params);
 
 		this.mAnnexClass = JbbossDjlx.JBDNDJ;
 
+		JbSnyLoginData loginData = (JbSnyLoginData)application.getLoginData();
+
         this.ucKh = new UcChooseSingleItem(this);
-        this.ucKh.SetFlag("JBBOSS_KH");
-        this.ucKh.SetParams(application.getLoginData().getUserbh());
+        this.ucKh.SetFlag("JBBOSSKH");
+		this.ucKh.SetParams("<Nzbh>" + loginData.getNzBh() + "</Nzbh><Rybh>" + loginData.getUserbh() + "</Rybh><Khlb>0</Khlb>");
         this.ucKh.setCName("客户信息");
         this.ucKh.setAllowEmpty(false);
         this.controls.add(this.ucKh);
@@ -63,11 +84,13 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 		this.ucKsrq.setCName("开始日期");
 		this.ucKsrq.setAllowEmpty(false);
 		this.controls.add(this.ucKsrq);
+		this.ucKsrq.addOnDataChangedListener(jeChangeEventListener);
 
         this.ucJsrq = new UcDateBox(this);
-        this.ucJsrq.setCName("开始日期");
+        this.ucJsrq.setCName("结束日期");
         this.ucJsrq.setAllowEmpty(false);
         this.controls.add(this.ucJsrq);
+		this.ucJsrq.addOnDataChangedListener(jeChangeEventListener);
 
         this.ucBz = new UcTextBox(this);
         this.ucBz.setCName("备注");
@@ -85,16 +108,24 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 	@Override
 	protected HsFragment_ZD_Detail createDJDetailFragment()
 	{
-		
-		return new DetailFragment();
+		DetailFragment f = new DetailFragment();
+		f.addOnDataChangedListener(jeChangeEventListener);
+		return f;
 	}
 
-	protected void newData()
+	private int getDnts()
 	{
-		super.newData();
+		long ksrq = ucKsrq.getControlDate().getTime();
+		long jsrq = ucJsrq.getControlDate().getTime();
 
-		this.ucKsrq.SetFlag("Now");
-	};
+		if(ksrq > jsrq)
+		{
+			return 0;
+		}else
+		{
+			return 1 + (int)((jsrq - ksrq) / (24 * 3600 * 1000));
+		}
+	}
 
 	@Override
 	protected void setData(IHsLabelValue data) throws Exception
@@ -102,11 +133,12 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 		this.setDJId(data.getValue("DjId", "-1").toString());
         this.ucKh.setControlValue(data.getValue("Khbh", "").toString() + "," + data.getValue("Khmc","").toString());
 		this.ucKsrq.setControlValue(data.getValue("Ksrq", "").toString());
-		this.ucKsrq.setControlValue(data.getValue("Jsrq", "").toString());
+		this.ucJsrq.setControlValue(data.getValue("Jsrq", "").toString());
 		this.ucBz.setControlValue(data.getValue("Bz", "").toString());
 
 		//表体数据
-		this.mDetailFragemnt.setControlValue(data.getValue("StrMx", "[]").toString(), "Cpmc","Sl");
+		this.mDetailFragemnt.setControlValue(data.getValue("StrMx", "[]").toString(), "Label","Value");
+
 	}
 
 	@Override
@@ -147,7 +179,7 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 		{
             Activity_DJ_JbSnydndj activity = (Activity_DJ_JbSnydndj)getActivity();
 
-            UcFormItem f_kh = new UcFormItem(context,activity.ucBz);
+            UcFormItem f_kh = new UcFormItem(context,activity.ucKh);
 
             UcFormItem f_ksrq = new UcFormItem(context, activity.ucKsrq);
 
@@ -155,9 +187,8 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 
 			UcFormItem f_bz = new UcFormItem(context, activity.ucBz);
 
-			mainView.addView(f_ksrq.GetView());
 			mainView.addView(f_kh.GetView());
-            mainView.addView(f_ksrq.GetView());
+			mainView.addView(f_ksrq.GetView());
             mainView.addView(f_jsrq.GetView());
 			mainView.addView(f_bz.GetView());
 		}
@@ -172,6 +203,41 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 			super();
 			
 			this.Title = "订单明细";
+		}
+
+		public Double getRje()
+		{
+			Double rje = 0.00;
+
+			if (this.getAdapter() != null && this.getAdapter() instanceof HsUserLabelValueAdapter) {
+				List<IHsLabelValue> items = ((HsUserLabelValueAdapter) this.getAdapter()).getAllItems();
+
+				Double dj = 0.00;
+				int sl = 0;
+
+				for (IHsLabelValue item : items) {
+					dj = Double.parseDouble(item.getValue("Dj", "0").toString());
+					sl = Integer.parseInt(item.getValue("Sl", "0").toString());
+
+					rje += dj * sl;
+
+				}
+			}
+
+			return rje;
+		}
+
+		@Override
+		public void setSummaryText()
+		{
+			if(mSummary != null)
+			{
+				Activity_DJ_JbSnydndj activity = (Activity_DJ_JbSnydndj) getActivity();
+
+				int ts = activity.getDnts();
+
+				mSummary.setText("共" + activity.getDnts() +"天，金额合计" + HsRound.Round(getRje() * activity.getDnts(),2) + "元");
+			}
 		}
 
 		@Override

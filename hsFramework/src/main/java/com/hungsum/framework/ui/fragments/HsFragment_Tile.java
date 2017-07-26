@@ -93,7 +93,7 @@ public class HsFragment_Tile extends HsFragment
 				@SuppressWarnings("unchecked")
 				HashMap<String,Object> map = (HashMap<String,Object>)(ucGridView.getAdapter().getItem(arg2));
 
-				dispatchCommEvent(EventCategory.UserFunc, new CommEventObject(HsFragment_Tile.this, map.get("Key")));
+				triggerCommEvent(EventCategory.UserFunc, new CommEventObject(HsFragment_Tile.this, map.get("Key")));
 
 			}
 		});

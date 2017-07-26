@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.FLASHLIGHT" />
 
     <application
-        android:name="com.hungsum.jbboss.componments.Jbboss_Application"
+        android:name="com.hungsum.jbcmp.componments.Jbcmp_Application"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
@@ -29,7 +29,7 @@
 
         <!-- 欢迎界面 -->
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_Welcome"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_Welcome"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,7 +55,7 @@
 
         <!-- 主界面 -->
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_Jbboss_Main"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_Jbcmp_Main"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="com.hungsum.framework.intent.action.MAIN" >
@@ -69,7 +69,7 @@
 
         <!-- 查询条件 -->
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_QueryCondition"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_QueryCondition"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="com.hungsum.framework.intent.action.QUERYCONDITION" />
@@ -288,10 +288,7 @@
 
 
         <!-- 流程  待办事项 -->
-        <activity
-            android:name="com.hungsum.oa.workflow.ui.activities.HsActivity_List_Dbsx"
-            android:screenOrientation="portrait" >
-        </activity>
+
 
         <!-- 流程  审批记录列表 -->
         <activity
@@ -336,7 +333,7 @@
 
         <!-- 流程  待办事项 -->
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_List_Dbsx"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_List_Dbsx"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="com.hungsum.oa.intent.action.DBSX" >
@@ -349,25 +346,25 @@
 
         <!-- 信息记录维护 -->
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_List_JbKhzd"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_List_XXJL"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_DJ_JbKhzd"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_DJ_XXJL"
             android:screenOrientation="portrait" >
         </activity>
 
         <!-- 采购审批单 -->
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_List_JbSnydndj"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_List_JbCgspd"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_DJ_JbSnydndj"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_DJ_JbCgspd"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.hungsum.jbboss.ui.activities.Activity_DJ_JbSnydndjmx"
+            android:name="com.hungsum.jbcmp.ui.activities.Activity_DJ_JbCgspdMx"
             android:screenOrientation="portrait" >
         </activity>
     </application>

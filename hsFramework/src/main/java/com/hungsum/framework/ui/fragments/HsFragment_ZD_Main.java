@@ -35,9 +35,9 @@ public abstract class HsFragment_ZD_Main extends HsFragment_ZD
 		
 		mHasCreateCompleted = true;
 		
-		if(mListener != null)
+		if(mListenerOfCreateCompletedEventListener != null)
 		{
-			mListener.action(savedInstanceState);
+			mListenerOfCreateCompletedEventListener.action(savedInstanceState);
 			
 			removeOnCreateCompletedEventListener();
 		}

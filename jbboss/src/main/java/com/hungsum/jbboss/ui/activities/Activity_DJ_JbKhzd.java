@@ -5,6 +5,7 @@ import java.io.Serializable;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.hungsum.framework.componments.HsWSReturnObject;
 import com.hungsum.framework.interfaces.IHsLabelValue;
@@ -135,15 +136,20 @@ public class Activity_DJ_JbKhzd extends HsActivity_DJ
 	public void actionAfterWSReturnData(String funcname, Serializable data)
 			throws Exception
 	{
-		if(funcname.equals("UpdateXxjl"))
+		if(funcname.equals("UpdateJbKhzd"))
 		{
 			//在此处需要调用updateAnnex方法更新图像即可，对于新建单据更新图像前一定要赋值mDJId。
 			this.setDJId(data.toString());
 			
-			this.updateAnnex(); //更新附件，包括文件、图片等。
-			
-			
-			//updateSysImages();
+			ShowInformation("更新成功，客户编号为" + this.getDJId() + "。", Toast.LENGTH_LONG);
+
+			mIsModified = false;
+
+			if(mIsCloseWhenUpdateCompleted)
+			{
+				finish();
+			}
+
 		}else {
 			super.actionAfterWSReturnData(funcname, data);
 		}

@@ -77,7 +77,7 @@ public abstract class HsActivity_DJWithImages extends HsActivity_DJ
 				
 				if(mNeedUpdateImage)
 				{
-					ucImageBox.dispatchDataChangedEvents();
+					ucImageBox.triggerDataChangedEvents();
 				}
 
 				ucImageBox.setImagesCachedPath(data.getStringArrayListExtra("ImagesCachedPath"));

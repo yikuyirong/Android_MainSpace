@@ -18,6 +18,7 @@ public class Activity_Login extends HsActivity_Login
 
     @Override
     protected void newData() {
+
         super.newData();
 
         this.ucUsername.setHint("请输入用户编号/手机号码");

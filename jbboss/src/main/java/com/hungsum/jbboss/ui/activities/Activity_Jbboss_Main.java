@@ -34,7 +34,7 @@ public class Activity_Jbboss_Main extends HsActivity_HSOA_Main
 		if(funcKey.equals(JbbossFuncKey.JB订奶单据录入)) //信息记录维护
 		{
 			Intent intent = new Intent();
-			intent.setClass(this, Activity_List_JbKhzd.class);
+			intent.setClass(this,Activity_List_JbSnydndj.class);
 			intent.putExtra("Title","订奶单据录入");
 			startActivity(intent);
 		}else if(funcKey.equals(JbbossFuncKey.JB客户信息维护))

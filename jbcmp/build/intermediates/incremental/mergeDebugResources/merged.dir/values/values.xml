@@ -430,6 +430,7 @@
     <string name="str_please_choose_db">请选择账套</string>
     <string name="str_please_insert_password">请输入密码</string>
     <string name="str_please_insert_username">请输入用户名</string>
+    <string name="str_print">打印</string>
     <string name="str_query">查询</string>
     <string name="str_quit">退出</string>
     <string name="str_remember_password">记住密码</string>

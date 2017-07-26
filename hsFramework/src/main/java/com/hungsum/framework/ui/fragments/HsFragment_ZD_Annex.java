@@ -56,7 +56,9 @@ public abstract class HsFragment_ZD_Annex<T extends Serializable> extends HsFrag
 		
 		if(mIsModified)
 		{
-			dispatchCommEvent(EventCategory.DataChanged, null);
+			this.triggerDataChangedEvents();
+
+			//triggerCommEvent(EventCategory.DataChanged, null);
 		}
 	}
 	
@@ -264,7 +266,7 @@ public abstract class HsFragment_ZD_Annex<T extends Serializable> extends HsFrag
 	}
 
 	@Override
-	public void dispatchDataChangedEvents()
+	public void triggerDataChangedEvents()
 	{
 		if(this.mListeners != null)
 		{
@@ -353,6 +355,5 @@ public abstract class HsFragment_ZD_Annex<T extends Serializable> extends HsFrag
 	}
 
 	//}}
-	
-	
+
 }

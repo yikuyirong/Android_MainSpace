@@ -213,10 +213,10 @@ public class UcTextBox extends EditText implements IControlValue
 	{
 		super.onTextChanged(text, start, lengthBefore, lengthAfter);
 		
-		dispatchDataChangedEvents();
+		triggerDataChangedEvents();
 	}
 
-	public void dispatchDataChangedEvents()
+	public void triggerDataChangedEvents()
 	{
 		if(this.dataChangedListenerlisteners != null)
 		{

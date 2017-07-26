@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:2:1-370:12
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:2:1-366:12
 	package
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:3:5-33
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml
 		INJECTED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml
 	android:versionName
@@ -57,7 +57,7 @@ ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:1
 	android:name
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:17:22-66
 application
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:19:5-368:23
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:19:5-364:23
 MERGED from [MainSpace:hsOA:unspecified] D:\Projects\Android_AS\MainSpace\hsOA\build\intermediates\bundles\default\AndroidManifest.xml:11:5-16:19
 MERGED from [MainSpace:hsFramework:unspecified] D:\Projects\Android_AS\MainSpace\hsFramework\build\intermediates\bundles\default\AndroidManifest.xml:11:5-15:19
 MERGED from [MainSpace:photoView:unspecified] D:\Projects\Android_AS\MainSpace\photoView\build\intermediates\bundles\default\AndroidManifest.xml:11:5-55
@@ -73,13 +73,13 @@ MERGED from [MainSpace:hsUtils:unspecified] D:\Projects\Android_AS\MainSpace\hsU
 	android:theme
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:24:9-40
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:20:9-73
-activity#com.hungsum.jbboss.ui.activities.Activity_Welcome
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:20:9-71
+activity#com.hungsum.jbcmp.ui.activities.Activity_Welcome
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:29:9-37:20
 	android:screenOrientation
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:31:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:30:13-77
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:30:13-76
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
@@ -110,24 +110,24 @@ category#android.intent.category.DEFAULT
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:49:17-50:28
 	android:name
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:49:27-73
-activity#com.hungsum.jbboss.ui.activities.Activity_Jbboss_Main
+activity#com.hungsum.jbcmp.ui.activities.Activity_Jbcmp_Main
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:55:9-66:20
 	android:screenOrientation
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:57:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:56:13-81
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:56:13-79
 intent-filter#android.intent.category.DEFAULT+com.hungsum.framework.intent.action.MAIN+com.hungsum.jbcmp
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:58:13-65:29
 action#com.hungsum.framework.intent.action.MAIN
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:59:17-60:26
 	android:name
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:59:25-80
-activity#com.hungsum.jbboss.ui.activities.Activity_QueryCondition
+activity#com.hungsum.jbcmp.ui.activities.Activity_QueryCondition
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:69:9-78:20
 	android:screenOrientation
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:71:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:70:13-84
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:70:13-83
 intent-filter#android.intent.category.DEFAULT+com.hungsum.framework.intent.action.QUERYCONDITION+com.hungsum.jbcmp
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:72:13-77:29
 action#com.hungsum.framework.intent.action.QUERYCONDITION
@@ -364,93 +364,87 @@ ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:2
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:277:13-49
 	android:name
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:276:13-84
-activity#com.hungsum.oa.workflow.ui.activities.HsActivity_List_Dbsx
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:283:9-286:20
-	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:285:13-49
-	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:284:13-86
 activity#com.hungsum.oa.workflow.ui.activities.HsActivity_List_HsLcspjls
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:289:9-292:20
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:285:9-288:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:291:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:287:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:290:13-91
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:286:13-91
 activity#com.hungsum.oa.workflow.ui.activities.HsActivity_DJ_HsLcspjl
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:295:9-298:20
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:291:9-294:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:297:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:293:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:296:13-88
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:292:13-88
 activity#com.hungsum.oa.workflow.ui.activities.HsActivity_DJ_HsLcbz
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:301:9-304:20
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:297:9-300:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:303:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:299:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:302:13-86
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:298:13-86
 activity#com.hungsum.oa.workflow.ui.activities.HsActivity_List_HsUserLcdj
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:307:9-310:20
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:303:9-306:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:309:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:305:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:308:13-92
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:304:13-92
 activity#com.hungsum.oa.workflow.ui.activities.HsActivity_DJ_HsUserLcdj
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:312:9-315:20
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:308:9-311:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:314:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:310:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:313:13-90
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:309:13-90
 activity#com.hungsum.oa.workflow.ui.activities.HsActivity_List_HsFyspd
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:318:9-321:20
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:314:9-317:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:320:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:316:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:319:13-89
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:315:13-89
 activity#com.hungsum.oa.workflow.ui.activities.HsActivity_DJ_HsFyspd
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:323:9-326:20
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:319:9-322:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:325:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:321:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:324:13-87
-activity#com.hungsum.jbboss.ui.activities.Activity_List_Dbsx
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:331:9-341:20
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:320:13-87
+activity#com.hungsum.jbcmp.ui.activities.Activity_List_Dbsx
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:327:9-337:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:333:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:329:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:332:13-79
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:328:13-78
 intent-filter#android.intent.category.DEFAULT+com.hungsum.jbcmp+com.hungsum.oa.intent.action.DBSX
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:334:13-340:29
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:330:13-336:29
 action#com.hungsum.oa.intent.action.DBSX
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:335:17-336:26
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:331:17-332:26
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:335:25-73
-activity#com.hungsum.jbboss.ui.activities.Activity_List_JbKhzd
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:331:25-73
+activity#com.hungsum.jbcmp.ui.activities.Activity_List_XXJL
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:340:9-343:20
+	android:screenOrientation
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:342:13-49
+	android:name
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:341:13-78
+activity#com.hungsum.jbcmp.ui.activities.Activity_DJ_XXJL
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:344:9-347:20
 	android:screenOrientation
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:346:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:345:13-81
-activity#com.hungsum.jbboss.ui.activities.Activity_DJ_JbKhzd
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:348:9-351:20
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:345:13-76
+activity#com.hungsum.jbcmp.ui.activities.Activity_List_JbCgspd
+ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:350:9-353:20
 	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:350:13-49
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:352:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:349:13-79
-activity#com.hungsum.jbboss.ui.activities.Activity_List_JbSnydndj
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:351:13-81
+activity#com.hungsum.jbcmp.ui.activities.Activity_DJ_JbCgspd
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:354:9-357:20
 	android:screenOrientation
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:356:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:355:13-84
-activity#com.hungsum.jbboss.ui.activities.Activity_DJ_JbSnydndj
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:355:13-79
+activity#com.hungsum.jbcmp.ui.activities.Activity_DJ_JbCgspdMx
 ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:358:9-361:20
 	android:screenOrientation
 		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:360:13-49
 	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:359:13-82
-activity#com.hungsum.jbboss.ui.activities.Activity_DJ_JbSnydndjmx
-ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:362:9-365:20
-	android:screenOrientation
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:364:13-49
-	android:name
-		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:363:13-84
+		ADDED from D:\Projects\Android_AS\MainSpace\jbcmp\src\main\AndroidManifest.xml:359:13-81

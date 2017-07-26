@@ -30,7 +30,7 @@ public class HsFragment extends android.support.v4.app.Fragment
 	
 	public int Icon;
 
-	protected CreateCompletedEventListener mListener;
+	protected CreateCompletedEventListener mListenerOfCreateCompletedEventListener;
 	
 	protected boolean mHasCreateCompleted;
 
@@ -75,7 +75,7 @@ public class HsFragment extends android.support.v4.app.Fragment
 	 * @param category
 	 * @param object
 	 */
-	protected void dispatchCommEvent(EventCategory category,CommEventObject object)
+	protected void triggerCommEvent(EventCategory category, CommEventObject object)
 	{
 		for (CommEventListener listener : mListeners.getItems(category))
 		{
@@ -186,12 +186,12 @@ public class HsFragment extends android.support.v4.app.Fragment
 	
 	public void setOnCreateCompletedEventListener(CreateCompletedEventListener listener)
 	{
-		this.mListener = listener;
+		this.mListenerOfCreateCompletedEventListener = listener;
 	}
 	
 	public void removeOnCreateCompletedEventListener()
 	{
-		this.mListener = null;
+		this.mListenerOfCreateCompletedEventListener = null;
 	}
 	
 	public interface CreateCompletedEventListener extends EventListener

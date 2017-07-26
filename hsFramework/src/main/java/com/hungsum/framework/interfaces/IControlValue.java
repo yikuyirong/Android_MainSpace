@@ -35,7 +35,7 @@ public interface IControlValue
 	
 	void Reset();
 
-	void dispatchDataChangedEvents();
+	void triggerDataChangedEvents();
 	
 	void addOnDataChangedListener(CommEventListener listener);
 	

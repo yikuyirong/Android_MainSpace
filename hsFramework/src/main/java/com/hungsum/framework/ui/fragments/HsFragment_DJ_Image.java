@@ -113,9 +113,9 @@ public class HsFragment_DJ_Image extends HsFragment_ZD_Annex<HsBitmap>
 		mHasCreateCompleted = true;
 
 		//第一次建立后触发
-		if(mListener != null)
+		if(mListenerOfCreateCompletedEventListener != null)
 		{
-			mListener.action(savedInstanceState);
+			mListenerOfCreateCompletedEventListener.action(savedInstanceState);
 
 			removeOnCreateCompletedEventListener();
 		}
@@ -559,7 +559,7 @@ public class HsFragment_DJ_Image extends HsFragment_ZD_Annex<HsBitmap>
 		{
 			showInformation("更新成功");
 			
-			dispatchCommEvent(EventCategory.UpdateCompleted,null);
+			triggerCommEvent(EventCategory.UpdateCompleted,null);
 		}
 	}
 	
@@ -748,7 +748,7 @@ public class HsFragment_DJ_Image extends HsFragment_ZD_Annex<HsBitmap>
 			mIsModified = false;
 			
 			//发布更新完成事件
-			dispatchCommEvent(EventCategory.UpdateCompleted, null);
+			triggerCommEvent(EventCategory.UpdateCompleted, null);
 		}
 		else
 		{

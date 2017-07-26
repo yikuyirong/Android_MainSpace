@@ -2,7 +2,6 @@ package com.hungsum.framework.ui.activities;
 
 import java.io.Serializable;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences.Editor;
@@ -24,7 +23,6 @@ import com.hungsum.framework.interfaces.IHsLabelValue;
 import com.hungsum.framework.models.ModelLogin;
 import com.hungsum.framework.ui.controls.UcMultiRadio;
 import com.hungsum.framework.ui.controls.UcTextBox;
-import com.hungsum.framework.ui.fragments.HsFragment;
 import com.hungsum.framework.ui.fragments.HsFragment_ZD_Main;
 import com.hungsum.framework.utils.HsGZip;
 
@@ -138,6 +136,26 @@ public class HsActivity_Login extends HsActivity_ZD
 		}
 	}
 
+
+	@Override
+	protected void newData()
+	{
+		super.newData();
+
+		//载入储存值
+
+		ucSavepassword.setChecked(preference.getBoolean(STORE_SAVEPASSWORD,false));
+
+		//initValue
+		ucUsername.setControlValue(preference.getString(STORE_USERNAME, ""));
+
+		if(ucSavepassword.isChecked())
+		{
+			ucPassword.setControlValue(preference.getString(STORE_PASSWORD,""));
+		}
+
+	}
+
 	@Override
 	protected HsWSReturnObject updateOnOtherThread() throws Exception
 	{
@@ -242,15 +260,6 @@ public class HsActivity_Login extends HsActivity_ZD
 
 			activity.ucSavepassword = (CheckBox)rootView.findViewById(R.id.ucSavePassword);
 
-			activity.ucSavepassword.setChecked(activity.preference.getBoolean(STORE_SAVEPASSWORD,false));
-
-			//initValue
-			activity.ucUsername.setControlValue(activity.preference.getString(STORE_USERNAME, ""));
-			if(activity.ucSavepassword.isChecked())
-			{
-				activity.ucPassword.setControlValue(activity.preference.getString(STORE_PASSWORD,""));
-			}
-
 			activity.ucSerialNum = (TextView)rootView.findViewById(R.id.ucSerialNum);
 			activity.ucSerialNum.setText(android.os.Build.SERIAL);
 			activity.ucSerialNum.setText(mApplication.GetSerialNumber());
@@ -283,9 +292,9 @@ public class HsActivity_Login extends HsActivity_ZD
 
 			mHasCreateCompleted = true;
 
-			if(mListener != null)
+			if(mListenerOfCreateCompletedEventListener != null)
 			{
-				mListener.action(savedInstanceState);
+				mListenerOfCreateCompletedEventListener.action(savedInstanceState);
 
 				removeOnCreateCompletedEventListener();
 			}

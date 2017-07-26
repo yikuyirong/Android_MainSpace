@@ -103,7 +103,7 @@ public abstract class HsActivity_ZD extends HsTabActivity
 	
 	private String mTitleNotSaved;
 	
-	private Boolean mIsModified = false;
+	protected Boolean mIsModified = false;
 
 
 	protected boolean mIsCloseWhenUpdateCompleted = true;

@@ -21,7 +21,9 @@ public class UcDateBox extends UcTextBoxWithDialog
 {
 	private String mShowStyle = "DATE";
 	
-	private Calendar calendar = Calendar.getInstance();
+	//private Calendar mCalendar = Calendar.getInstance();
+
+	private Date mCurrentDate = new Date();
 
 	public UcDateBox(Context context)
 	{
@@ -50,9 +52,15 @@ public class UcDateBox extends UcTextBoxWithDialog
 		this.setOnClickListener(this);
 	}
 
-	private void setControlValue(Calendar calendar)
+	public Date getControlDate()
 	{
-		Date date = calendar.getTime();
+		return mCurrentDate;
+	}
+
+	private void setControlValue(Date date)
+	{
+		mCurrentDate = date;
+
 		if(this.mShowStyle.equals("YEARMONTH"))
 		{
 			super.setControlValue(HsDate.TransDateToString("yyyy-MM", date));
@@ -77,7 +85,11 @@ public class UcDateBox extends UcTextBoxWithDialog
 			{
 				dateFormatString = "yyyy";
 			}
-			super.setControlValue(HsDate.TransDateToString(dateFormatString, HsDate.TransStringToDate(dateFormatString , value.toString())));
+
+			this.setControlValue(HsDate.TransStringToDate(dateFormatString , value.toString()));
+
+			//super.setControlValue(HsDate.TransDateToString(dateFormatString, HsDate.TransStringToDate(dateFormatString , value.toString())));
+
 		} catch (Exception e) {
 			super.setControlValue("");
 		}
@@ -96,17 +108,17 @@ public class UcDateBox extends UcTextBoxWithDialog
 	
 	private void setControlValueByFlag(String flag)
 	{
-		calendar = Calendar.getInstance();
+		Calendar calendar = Calendar.getInstance();
 		if (flag.toUpperCase(Locale.getDefault()).equals("MONTHFIRST"))
 		{
-			calendar.set(calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH), 1);
+			calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), 1);
 			
 		}else if (flag.toUpperCase(Locale.getDefault()).equals("YEARFIRST")) 
 		{
 			calendar.set(calendar.get(Calendar.YEAR), 1, 1);
 		}
 
-		this.setControlValue(calendar);
+		this.setControlValue(calendar.getTime());
 	}
 	
 	/*
@@ -129,7 +141,9 @@ public class UcDateBox extends UcTextBoxWithDialog
 	@Override
 	protected void showDialog()
 	{
-		try 
+		final Calendar calendar = Calendar.getInstance();
+
+		try
 		{
 			if(!getControlValue().toString().equals(""))
 			{
@@ -157,13 +171,15 @@ public class UcDateBox extends UcTextBoxWithDialog
 		if(this.mShowStyle.equals("YEARMONTH"))
 		{
 			picker = new YearMonthPickerDialog((UcDateBox.this).getContext(),
+
 					new OnDateSetListener() {
 
 						@Override
 						public void onDateSet(DatePicker view, int year,
-								int monthOfYear, int dayOfMonth) {
+								int monthOfYear, int dayOfMonth)
+						{
 							calendar.set(year, monthOfYear, dayOfMonth);
-							setControlValue(calendar);
+							setControlValue(calendar.getTime());
 						}
 					}, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH),
 					calendar.get(Calendar.DAY_OF_MONTH));
@@ -176,7 +192,7 @@ public class UcDateBox extends UcTextBoxWithDialog
 						public void onDateSet(DatePicker view, int year,
 								int monthOfYear, int dayOfMonth) {
 							calendar.set(year, monthOfYear, dayOfMonth);
-							setControlValue(calendar);
+							setControlValue(calendar.getTime());
 						}
 					}, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH),
 					calendar.get(Calendar.DAY_OF_MONTH));
@@ -188,7 +204,7 @@ public class UcDateBox extends UcTextBoxWithDialog
 						public void onDateSet(DatePicker view, int year,
 								int monthOfYear, int dayOfMonth) {
 							calendar.set(year, monthOfYear, dayOfMonth);
-							setControlValue(calendar);
+							setControlValue(calendar.getTime());
 						}
 					}, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH),
 					calendar.get(Calendar.DAY_OF_MONTH));

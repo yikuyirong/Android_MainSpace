@@ -369,13 +369,45 @@ public abstract class HsActivity_List_DJ extends HsActivity_HsLabelValueList
 		}
 	}
 
-	
+	protected String getActionPromptString(int actionId)
+	{
+		String promptString = "";
+
+		if(actionId == R.string.str_delete)
+		{
+			promptString = "是否删除选中数据？";
+		}else if(actionId == R.string.str_submit)
+		{
+			promptString = "是否提交选中数据？";
+		}else if(actionId == R.string.str_unsubmit)
+		{
+			promptString = "是否取消提交选中数据？";
+		}
+		else if(actionId == R.string.str_audit)
+		{
+			promptString = "是否审核选中数据？";
+		}else if(actionId == R.string.str_unaudit)
+		{
+			promptString = "是否取消审核选中数据？";
+		}else if(actionId == R.string.str_confirm)
+		{
+			promptString = "是否确认选中数据？";
+		}else if(actionId == R.string.str_unconfirm)
+		{
+			promptString = "是否取消确认选中数据？";
+		}else {
+			promptString = "是否处理选中数据？";
+		}
+
+		return promptString;
+	}
+
 	protected void actionAfterMenuOrButtonClick(final int actionId, final IHsLabelValue object) throws Exception
 	{
 		if(doSomeThingByContextItemSelected(actionId, object))
 		{
 			//在工作线程中继续进行处理
-			showAlert("是否处理选中数据？", "确定", new OnClickListener()
+			showAlert(getActionPromptString(actionId), "确定", new OnClickListener()
 			{
 				@Override
 				public void onClick(DialogInterface dialog, int which)

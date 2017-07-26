@@ -36,7 +36,7 @@ public class JbbossWebService extends HSOAWebService
 
 	//endregion
 
-	//region 信息记录
+	//region 客户信息
 	
 	public HsWSReturnObject showJbKhzds(String progressId, String nzbh, String rybh,String khlb) throws Exception
 	{
@@ -95,7 +95,7 @@ public class JbbossWebService extends HSOAWebService
 		sb.append("<ProgressId>" + progressId + "</ProgressId>");
 		sb.append("<BeginDate>" + beginDate + "</BeginDate>");
 		sb.append("<EndDate>" + endDate + "</EndDate>");
-		sb.append("<Djzt>" + djzt + "</Spzt>");
+		sb.append("<Djzt>" + djzt + "</Djzt>");
 		sb.append("</Data>");
 		
 		String funcName = "ShowJbSnydndjs";
@@ -142,6 +142,26 @@ public class JbbossWebService extends HSOAWebService
 
 		return this.formatReturnData(funcName, request);
 	}
+
+	//endregion
+
+	//region 产品信息
+
+	public HsWSReturnObject showJbCpzds(String progressId) throws Exception
+	{
+		StringBuffer sb = new StringBuffer();
+		sb.append("<Data>");
+		sb.append("<ProgressId>" + progressId + "</ProgressId>");
+		sb.append("</Data>");
+
+		String funcName = "ShowJbCpzds";
+		SoapObject request = new SoapObject(this.namespace, funcName);
+		request.addProperty("data",HsGZip.CompressString(sb.toString()));
+
+		return this.formatReturnData(funcName, request);
+}
+
+
 
 	//endregion
 }

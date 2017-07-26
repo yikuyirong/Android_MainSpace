@@ -43,6 +43,7 @@
     <string name="str_browse">浏览</string>
     <string name="str_retrieve">刷新</string>
     <string name="str_download">下载</string>
+    <string name="str_print">打印</string>
     
     <!-- 工作流  -->
     <string name="str_startfreelc">启动自由流程</string>

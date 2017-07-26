@@ -74,9 +74,9 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 
 		mHasCreateCompleted = true;
 		
-		if(mListener != null)
+		if(mListenerOfCreateCompletedEventListener != null)
 		{
-			mListener.action(savedInstanceState);
+			mListenerOfCreateCompletedEventListener.action(savedInstanceState);
 			
 			removeOnCreateCompletedEventListener();
 		}
@@ -97,12 +97,18 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 	@Override
 	protected BaseAdapter getAdapter()
 	{
-		if (this.ucListView.getAdapter() == null)
+		if(this.ucListView != null)
 		{
-			this.ucListView
-					.setAdapter(createAdapter(new ArrayList<IHsLabelValue>()));
+			if (this.ucListView.getAdapter() == null)
+			{
+				this.ucListView
+						.setAdapter(createAdapter(new ArrayList<IHsLabelValue>()));
+			}
+			return (HsZDDetailAdapter) this.ucListView.getAdapter();
+		}else
+		{
+			return null;
 		}
-		return (HsZDDetailAdapter) this.ucListView.getAdapter();
 	}
 
 	//}}
@@ -212,7 +218,7 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 		((HsZDDetailAdapter)getAdapter()).add(item);
 
 		mItems.add(item);
-		
+
 		this.setSummaryText();
 	}
 	
@@ -220,7 +226,7 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 	protected void addItems(List<IHsLabelValue> items)
 	{
 		super.addItems(items);
-		
+
 		((HsZDDetailAdapter)getAdapter()).add(items);
 
 		mItems = items;
@@ -232,12 +238,13 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 	protected void removeItem(int position)
 	{
 		super.removeItem(position);
-		
+
 		((HsZDDetailAdapter)getAdapter()).remove(position);
 		
 		mItems.remove(position);
 
 		this.setSummaryText();
+
 	}
 	
 	@Override
@@ -250,7 +257,6 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 
 	/**
 	 * 设置汇总行信息
-	 * @param text
 	 */
 	@Override
 	public void setSummaryText()
@@ -313,6 +319,9 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 
 			jsonObject = new JSONObject();
 
+			jsonObject.put("Label",item.getLabel());
+			jsonObject.put("Value",item.getValue());
+
 			for (IHsLabelValue detail : item.getDetails())
 			{
 				jsonObject.put(detail.getLabel(),detail.getValue());
@@ -357,20 +366,20 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 		return sb.toString();
 	}
 
-	public void setControlValue(final CharSequence data,final String key,final String value) throws JSONException
+	public void setControlValue(final CharSequence data,final String label,final String value) throws JSONException
 	{
 		if(mHasCreateCompleted)
 		{
-			setControlValueDelay(data,key,value);
+			setControlValueDelay(data,label,value);
 		}else {
-			mListener = new CreateCompletedEventListener()
+			mListenerOfCreateCompletedEventListener = new CreateCompletedEventListener()
 			{
 				@Override
 				public void action(Bundle savedInstanceState)
 				{
 					try
 					{
-						setControlValueDelay(data,key,value);
+						setControlValueDelay(data,label,value);
 					} catch (Exception e)
 					{
 						showError(e);
@@ -383,10 +392,10 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 	@Override
 	public void setControlValue(CharSequence value) throws Exception
 	{
-		this.setControlValue(value, "Key", "Value");
+		this.setControlValue(value, "Label", "Value");
 	}
 
-	private void setControlValueDelay(CharSequence data,String keymc,String valuemc) throws JSONException
+	private void setControlValueDelay(CharSequence data,String labelmc,String valuemc) throws JSONException
 	{
 		JSONTokener tokener = new JSONTokener(data.toString());
 		
@@ -398,19 +407,19 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 		{
 			JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-			String key = jsonObject.getString(keymc);
+			String label = jsonObject.getString(labelmc);
 			String value = jsonObject.getString(valuemc);
 			
-			HsLabelValue item = new HsLabelValue(key,value);
+			HsLabelValue item = new HsLabelValue(label,value);
 			item.SetIsShowDetailImage(false);
 			
 			Iterator<String> iterator = jsonObject.keys();
 
 			while (iterator.hasNext())
 			{
-				key = (String)iterator.next();
-				value = jsonObject.getString(key);
-				item.addDetail(new HsLabelValue(key,value));
+				label = (String)iterator.next();
+				value = jsonObject.getString(label);
+				item.addDetail(new HsLabelValue(label,value));
 			}
 			
 			items.add(item);
@@ -454,4 +463,5 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 	}
 
 	//}}
+
 }
