@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MainSpace.iml" filepath="$PROJECT_DIR$/MainSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/hsFramework/hsFramework.iml" filepath="$PROJECT_DIR$/hsFramework/hsFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/hsOA/hsOA.iml" filepath="$PROJECT_DIR$/hsOA/hsOA.iml" />
       <module fileurl="file://$PROJECT_DIR$/hsUtils/hsUtils.iml" filepath="$PROJECT_DIR$/hsUtils/hsUtils.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/jbcmp/jbcmp.iml" filepath="$PROJECT_DIR$/jbcmp/jbcmp.iml" />
       <module fileurl="file://$PROJECT_DIR$/photoView/photoView.iml" filepath="$PROJECT_DIR$/photoView/photoView.iml" />
       <module fileurl="file://$PROJECT_DIR$/testApplication/testApplication.iml" filepath="$PROJECT_DIR$/testApplication/testApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testprint/testprint.iml" filepath="$PROJECT_DIR$/testprint/testprint.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewPagerIndicator/viewPagerIndicator.iml" filepath="$PROJECT_DIR$/viewPagerIndicator/viewPagerIndicator.iml" />
     </modules>
   </component>

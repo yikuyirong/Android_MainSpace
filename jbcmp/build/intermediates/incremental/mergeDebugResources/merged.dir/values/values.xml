@@ -406,7 +406,6 @@
     <string name="str_browse">浏览</string>
     <string name="str_changeUser">更换用户</string>
     <string name="str_changepwd">更换密码</string>
-    <string name="str_changerole">更换角色</string>
     <string name="str_chooseFile">选择文件</string>
     <string name="str_chooseImage">选择图片</string>
     <string name="str_config">设置</string>
@@ -445,6 +444,7 @@
     <string name="str_unaudit">取消审核</string>
     <string name="str_unconfirm">取消确认</string>
     <string name="str_unsubmit">取消提交</string>
+    <string name="str_userinfo">个人信息</string>
     <string name="str_wlyecx">物料余额查询</string>
     <string name="str_xsjgcx">销售价格查询</string>
     <string name="str_xsthtjcx">销售提货统计查询</string>
@@ -455,15 +455,11 @@
     <string name="userdo5">自定义5</string>
     <string name="userdo6">自定义6</string>
     <style name="AppBaseTheme" parent="android:Theme.Black">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-        <!--  -->
+        
+        
     </style>
     <style name="TextAppearance.TabPageIndicator" parent="Widget">
         <item name="android:textStyle">bold</item>

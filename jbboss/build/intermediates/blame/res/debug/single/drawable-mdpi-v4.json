@@ -476,12 +476,12 @@
         "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-mdpi-v4\\collections_cloud.png"
     },
     {
-        "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\av_pause_over_video.png",
-        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-mdpi-v4\\av_pause_over_video.png"
-    },
-    {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\action_about.png",
         "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-mdpi-v4\\action_about.png"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\av_pause_over_video.png",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-mdpi-v4\\av_pause_over_video.png"
     },
     {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\device_access_add_alarm.png",

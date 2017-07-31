@@ -828,37 +828,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int str_browse=0x7f0c000b;
         public static int str_changeUser=0x7f0c000c;
         public static int str_changepwd=0x7f0c000d;
-        public static int str_changerole=0x7f0c000e;
-        public static int str_chooseFile=0x7f0c000f;
-        public static int str_chooseImage=0x7f0c0010;
-        public static int str_config=0x7f0c0011;
-        public static int str_confirm=0x7f0c0012;
-        public static int str_delete=0x7f0c0013;
-        public static int str_download=0x7f0c0014;
-        public static int str_edit=0x7f0c0015;
-        public static int str_enter=0x7f0c0016;
-        public static int str_login=0x7f0c0017;
-        public static int str_modify=0x7f0c0018;
-        public static int str_new=0x7f0c0019;
-        public static int str_overlc=0x7f0c001a;
-        public static int str_please_choose_db=0x7f0c001b;
-        public static int str_please_insert_password=0x7f0c001c;
-        public static int str_please_insert_username=0x7f0c001d;
-        public static int str_print=0x7f0c001e;
-        public static int str_query=0x7f0c001f;
-        public static int str_quit=0x7f0c0020;
-        public static int str_remember_password=0x7f0c0021;
-        public static int str_retrieve=0x7f0c0022;
-        public static int str_search=0x7f0c0023;
-        public static int str_share=0x7f0c0024;
-        public static int str_star=0x7f0c0025;
-        public static int str_startfreelc=0x7f0c0026;
-        public static int str_startregularlc=0x7f0c0027;
-        public static int str_submit=0x7f0c0028;
-        public static int str_takePhoto=0x7f0c0029;
-        public static int str_unaudit=0x7f0c002a;
-        public static int str_unconfirm=0x7f0c002b;
-        public static int str_unsubmit=0x7f0c002c;
+        public static int str_chooseFile=0x7f0c000e;
+        public static int str_chooseImage=0x7f0c000f;
+        public static int str_config=0x7f0c0010;
+        public static int str_confirm=0x7f0c0011;
+        public static int str_delete=0x7f0c0012;
+        public static int str_download=0x7f0c0013;
+        public static int str_edit=0x7f0c0014;
+        public static int str_enter=0x7f0c0015;
+        public static int str_login=0x7f0c0016;
+        public static int str_modify=0x7f0c0017;
+        public static int str_new=0x7f0c0018;
+        public static int str_overlc=0x7f0c0019;
+        public static int str_please_choose_db=0x7f0c001a;
+        public static int str_please_insert_password=0x7f0c001b;
+        public static int str_please_insert_username=0x7f0c001c;
+        public static int str_print=0x7f0c001d;
+        public static int str_query=0x7f0c001e;
+        public static int str_quit=0x7f0c001f;
+        public static int str_remember_password=0x7f0c0020;
+        public static int str_retrieve=0x7f0c0021;
+        public static int str_search=0x7f0c0022;
+        public static int str_share=0x7f0c0023;
+        public static int str_star=0x7f0c0024;
+        public static int str_startfreelc=0x7f0c0025;
+        public static int str_startregularlc=0x7f0c0026;
+        public static int str_submit=0x7f0c0027;
+        public static int str_takePhoto=0x7f0c0028;
+        public static int str_unaudit=0x7f0c0029;
+        public static int str_unconfirm=0x7f0c002a;
+        public static int str_unsubmit=0x7f0c002b;
+        public static int str_userinfo=0x7f0c002c;
         public static int userdo1=0x7f0c002d;
         public static int userdo2=0x7f0c002e;
         public static int userdo3=0x7f0c002f;
@@ -869,15 +869,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
         public static int AppBaseTheme=0x7f070000;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static int AppTheme=0x7f070001;
         public static int TextAppearance_TabPageIndicator=0x7f070002;
         public static int Theme_PageIndicatorDefaults=0x7f070003;

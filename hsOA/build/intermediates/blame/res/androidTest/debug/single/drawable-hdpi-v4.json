@@ -252,12 +252,12 @@
         "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-hdpi-v4\\content_split.png"
     },
     {
-        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsOA\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\location_place.png",
-        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-hdpi-v4\\location_place.png"
-    },
-    {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsOA\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\device_access_not_secure.png",
         "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-hdpi-v4\\device_access_not_secure.png"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsOA\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\location_place.png",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-hdpi-v4\\location_place.png"
     },
     {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsOA\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\device_access_location_searching.png",

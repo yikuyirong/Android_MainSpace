@@ -164,12 +164,12 @@
         "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-mdpi-v4\\ics.png"
     },
     {
-        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsOA\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\m4v.png",
-        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-mdpi-v4\\m4v.png"
-    },
-    {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsOA\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\device_access_screen_rotation.png",
         "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-mdpi-v4\\device_access_screen_rotation.png"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsOA\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\m4v.png",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-mdpi-v4\\m4v.png"
     },
     {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\hsOA\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\mpg.png",

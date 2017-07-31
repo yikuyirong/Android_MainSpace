@@ -44,6 +44,8 @@ public class Activity_DJ_JbSnydndjmx extends HsActivity_DJ
 
 		DJParams params = new DJParams(false, false, false);
 
+		this.setTitleSaved("订单明细");
+
 		//
 		this.setDJParams(params);
 

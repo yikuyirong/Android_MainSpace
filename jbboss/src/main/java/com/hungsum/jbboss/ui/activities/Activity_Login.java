@@ -35,6 +35,8 @@ public class Activity_Login extends HsActivity_Login
 
             JbSnyLoginData loginData = new ModelJbSnyLogin().Create(returnData);
 
+            application.ClearData();
+
             //将登录信息保存至本地缓存中
             application.setLoginData(loginData);
 

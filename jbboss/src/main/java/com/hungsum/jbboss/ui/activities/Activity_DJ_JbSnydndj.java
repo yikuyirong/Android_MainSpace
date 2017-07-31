@@ -1,8 +1,10 @@
 package com.hungsum.jbboss.ui.activities;
 
 import java.io.Serializable;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +13,7 @@ import android.os.Bundle;
 import android.widget.LinearLayout;
 
 import com.hungsum.framework.adapter.HsUserLabelValueAdapter;
+import com.hungsum.framework.componments.HsLabelValue;
 import com.hungsum.framework.componments.HsWSReturnObject;
 import com.hungsum.framework.events.CommEventListener;
 import com.hungsum.framework.events.CommEventObject;
@@ -23,6 +26,7 @@ import com.hungsum.framework.ui.controls.UcNumericInput;
 import com.hungsum.framework.ui.controls.UcTextBox;
 import com.hungsum.framework.ui.fragments.HsFragment_ZD_Detail;
 import com.hungsum.framework.ui.fragments.HsFragment_ZD_Main;
+import com.hungsum.framework.utils.HsDate;
 import com.hungsum.framework.utils.HsRound;
 import com.hungsum.jbboss.componments.JbSnyLoginData;
 import com.hungsum.jbboss.others.JbbossDjlx;
@@ -125,6 +129,26 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 		{
 			return 1 + (int)((jsrq - ksrq) / (24 * 3600 * 1000));
 		}
+	}
+
+	@Override
+	protected void newData()
+	{
+		super.newData();
+
+		Calendar calendar = Calendar.getInstance();
+
+		calendar.add(Calendar.MONTH,1);
+
+		calendar.set(Calendar.DAY_OF_MONTH,1);
+
+		ucKsrq.setControlDate(calendar.getTime());
+
+		calendar.add(Calendar.MONTH,1);
+
+		calendar.add(Calendar.DAY_OF_MONTH,-1);
+
+		ucJsrq.setControlDate(calendar.getTime());
 	}
 
 	@Override
@@ -264,15 +288,55 @@ public class Activity_DJ_JbSnydndj extends HsActivity_DJ
 		public void onActivityResult(int requestCode, int resultCode,
 				Intent data)
 		{
-			if(resultCode == Activity.RESULT_OK)
+			try
 			{
-				IHsLabelValue item = (IHsLabelValue) data.getSerializableExtra("Data");
-				
-				addItem(item);
-				
-			}else {
-				super.onActivityResult(requestCode, resultCode, data);
+				if(resultCode == Activity.RESULT_OK)
+				{
+					IHsLabelValue item = (IHsLabelValue) data.getSerializableExtra("Data");
+
+					List<IHsLabelValue> items = ((HsUserLabelValueAdapter) this.getAdapter()).getAllItems();
+
+					int index = -1;
+					int sl = 0;
+
+					for(int i = 0;i<items.size();i++)
+					{
+						if(items.get(i).getValue("Cpbh","").equals(item.getValue("Cpbh","")))
+						{
+							index = i;
+							sl = Integer.parseInt(items.get(i).getValue("Sl","0").toString());
+							break;
+						}
+					}
+
+					if(index > 0)
+					{
+						removeItem(index);
+					}
+
+					if(sl > 0)
+					{
+						item.addDetail(new HsLabelValue("Sl",Integer.parseInt(item.getValue("Sl","0").toString()) + sl));
+					}
+
+					sl = Integer.parseInt(item.getValue("Sl","0").toString());
+
+					double dj = Double.parseDouble(item.getValue("Dj","0").toString());
+
+					double rje = HsRound.Round(sl * dj,2);
+
+					item.setValue("数量：" + sl + " 单价：" + dj + " 单日金额：" + rje);
+
+					addItem(item);
+
+				}else {
+					super.onActivityResult(requestCode, resultCode, data);
+				}
+			}catch (Exception e)
+			{
+				showError(e.getMessage());
 			}
+
 		}
 	}
 	

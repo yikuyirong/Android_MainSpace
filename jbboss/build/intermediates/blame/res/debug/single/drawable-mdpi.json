@@ -128,12 +128,12 @@
         "source": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\src\\main\\res\\drawable-mdpi\\icon_16.png"
     },
     {
-        "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_11.png",
-        "source": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\src\\main\\res\\drawable-mdpi\\icon_11.png"
-    },
-    {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_13.png",
         "source": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\src\\main\\res\\drawable-mdpi\\icon_13.png"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_11.png",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\src\\main\\res\\drawable-mdpi\\icon_11.png"
     },
     {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_7.png",

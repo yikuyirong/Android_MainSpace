@@ -61,7 +61,7 @@ public class Activity_DJ_JbKhzd extends HsActivity_DJ
 		ucKhmc.setAllowEmpty(false);
 		this.controls.add(this.ucKhmc);
 		
-		ucDq = new UcChooseSingleItem(this).SetFlag("JBDQZD");
+		ucDq = new UcChooseSingleItem(this).SetFlag("JBBOSSDQ");
 		ucDq.setCName("地区");
 		ucDq.setAllowEmpty(false);
 		this.controls.add(this.ucDq);
@@ -142,6 +142,10 @@ public class Activity_DJ_JbKhzd extends HsActivity_DJ
 			this.setDJId(data.toString());
 			
 			ShowInformation("更新成功，客户编号为" + this.getDJId() + "。", Toast.LENGTH_LONG);
+
+			//清楚客户字典缓存
+
+			this.application.RemoveData("JBBOSSKH");
 
 			mIsModified = false;
 

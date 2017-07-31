@@ -96,12 +96,12 @@
         "source": "D:\\Projects\\Android_AS\\MainSpace\\jbcmp\\src\\main\\res\\drawable-mdpi\\icon_38.png"
     },
     {
-        "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbcmp\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_39.png",
-        "source": "D:\\Projects\\Android_AS\\MainSpace\\jbcmp\\src\\main\\res\\drawable-mdpi\\icon_39.png"
-    },
-    {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbcmp\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_5.png",
         "source": "D:\\Projects\\Android_AS\\MainSpace\\jbcmp\\src\\main\\res\\drawable-mdpi\\icon_5.png"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbcmp\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_39.png",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\jbcmp\\src\\main\\res\\drawable-mdpi\\icon_39.png"
     },
     {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbcmp\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_2.png",

@@ -17,6 +17,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+
+
 public class TabActivity extends AppCompatActivity
 {
 
@@ -186,22 +188,13 @@ public class TabActivity extends AppCompatActivity
         public int getCount()
         {
             // Show 3 total pages.
-            return 3;
+            return 2;
         }
 
         @Override
         public CharSequence getPageTitle(int position)
         {
-            switch (position)
-            {
-                case 0:
-                    return "SECTION 1";
-                case 1:
-                    return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
-            }
-            return null;
+            return "Section ".concat(String.valueOf(position));
         }
     }
 }

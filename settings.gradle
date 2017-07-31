@@ -1,4 +1,4 @@
-include ':photoView', ':testApplication'
+include ':photoView', ':testApplication', ':app', ':testprint'
 include ':viewPagerIndicator'
 include ':hsUtils'
 include ':hsFramework'

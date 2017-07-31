@@ -43,8 +43,8 @@
     <string name="key_jhdxdmxcx">Q_JHDXDMXCX</string>
     <string name="str_jhdxdkhhzcx">检核兑现单客户汇总查询</string>
     <string name="key_jhdxdkhhzcx">Q_JHDXDKHHZCX</string>
-    
-	<!--
+
+    <!--
     <string name="comm_logindata">LoginData</string>
     <string name="title_activity_hs_tab">HsTabActivity</string>
     <string name="title_section1">Section 1</string>
@@ -65,7 +65,7 @@
     <string name="str_login">登录</string>
     <string name="str_query">查询</string>
     <string name="title_activity_activity__jbcmp__main">Activity_JBCMP_Main</string>
-	-->    
+	-->
 
 
 </resources>

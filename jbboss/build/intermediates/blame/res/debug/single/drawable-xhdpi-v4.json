@@ -72,12 +72,12 @@
         "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\alerts_and_states_error.png"
     },
     {
-        "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\device_access_bluetooth_searching.png",
-        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\device_access_bluetooth_searching.png"
-    },
-    {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\collections_new_label.png",
         "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\collections_new_label.png"
+    },
+    {
+        "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\device_access_bluetooth_searching.png",
+        "source": "D:\\Projects\\Android_AS\\MainSpace\\hsFramework\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\device_access_bluetooth_searching.png"
     },
     {
         "merged": "D:\\Projects\\Android_AS\\MainSpace\\jbboss\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\vpi__tab_selected_focused_holo.9.png",
