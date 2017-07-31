@@ -99,6 +99,14 @@ public class HsWebService
 
 		return this.formatReturnData(funcName, request);
 	}
+
+	public HsWSReturnObject getCurrentDateTime() throws  Exception
+	{
+		String funcName = "GetCurrentDateTime";
+		SoapObject request = new SoapObject(this.namespace, funcName);
+
+		return this.formatReturnData(funcName, request);
+	}
 	
 	public HsWSReturnObject login(CharSequence username,CharSequence password,CharSequence connString ,CharSequence args) throws Exception
 	{

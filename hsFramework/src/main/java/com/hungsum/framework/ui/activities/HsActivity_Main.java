@@ -81,7 +81,7 @@ public abstract class HsActivity_Main extends HsTabActivity
 		super.onCreateOptionsMenu(menu);
 
 		//如果用户所属角色大于1个显示更换角色菜单
-		menu.add(0, R.string.str_changerole, 0, getString(R.string.str_changerole))
+		menu.add(0, R.string.str_userinfo, 0, getString(R.string.str_userinfo))
 		.setIcon(R.drawable.social_cc_bcc)
 		.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
 
@@ -89,8 +89,6 @@ public abstract class HsActivity_Main extends HsTabActivity
 		menu.add(0, R.string.str_changepwd, 0, getString(R.string.str_changepwd))
 		.setIcon(R.drawable.content_edit)
 		.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-
-		
 
 		return true;
 	}
@@ -103,7 +101,7 @@ public abstract class HsActivity_Main extends HsTabActivity
 			Intent intent = new Intent(this, HsActivity_ChangePassword.class);
 			startActivity(intent);
 			return true;
-		}else if(item.getItemId() == R.string.str_changerole)
+		}else if(item.getItemId() == R.string.str_userinfo)
 		{
 			if(this.mUserInformationAdapter != null)
 			{
@@ -235,7 +233,7 @@ public abstract class HsActivity_Main extends HsTabActivity
 
 	protected void close()
 	{
-		showAlert("确认退出吗？", "确定", new DialogInterface.OnClickListener()
+		showAlert("确认退出吗？",null, "确定", new DialogInterface.OnClickListener()
 		{
 			@Override
 			public void onClick(DialogInterface dialog, int which)

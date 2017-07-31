@@ -2,7 +2,9 @@ package com.hungsum.framework.componments;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Locale;
+import java.util.Map;
 
 import android.app.Application;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -60,6 +62,35 @@ public abstract class HsApplication<T extends HsWebService> extends Application
 	{
 		return mDatas == null ? null : mDatas.get(key);
 	}
+
+	/**
+	 * 清除以Key开头的所有缓存数据
+	 * @param key
+	 */
+	public void RemoveData(String key)
+	{
+		if(mDatas != null)
+		{
+			for (Iterator<Map.Entry<String, Object>> it = mDatas.entrySet().iterator(); it.hasNext();)
+			{
+				Map.Entry<String , Object> item = it.next();
+
+				if(item.getKey().startsWith(key))
+				{
+					it.remove();
+				}
+			}
+		}
+	}
+	
+	public void ClearData()
+	{
+		if(mDatas != null)
+		{
+			mDatas.clear();
+		}
+	}
+
 
 	public IHsLoginData getLoginData()
 	{

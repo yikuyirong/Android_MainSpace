@@ -145,7 +145,7 @@ public abstract class HsActivity_Welcome extends HsActivity
 	{
 		if (isForced) //重要更新
 		{
-			AlertDialog ad = showAlert("发现软件版本关键更新，需要更新才能继续使用？", 
+			AlertDialog ad = showAlert("发现软件版本关键更新，是否立刻下载安装？" , "需要更新才能继续使用？",
 					"更新",
 					new UpgradeHandler(),
 					"退出软件",
@@ -160,7 +160,7 @@ public abstract class HsActivity_Welcome extends HsActivity
 			});
 		} else
 		{
-			AlertDialog ad = showAlert("发现软件版本更新，是否立刻下载安装？", 
+			AlertDialog ad = showAlert("发现软件版本更新，是否立刻下载安装？", null,
 					"更新",
 					new UpgradeHandler(), 
 					"下次再说",

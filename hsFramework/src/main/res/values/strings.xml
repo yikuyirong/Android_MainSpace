@@ -4,7 +4,7 @@
     <string name="msg_data">DATA</string>
 
     <!-- sysFragment -->
-    <string name="str_changerole">更换角色</string>
+    <string name="str_userinfo">个人信息</string>
     <string name="str_changepwd">更换密码</string>
     <string name="key_changepws">ChangePassword</string>
     <string name="str_changeUser">更换用户</string>

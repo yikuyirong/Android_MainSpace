@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TabHost;
 import android.widget.TextView;
 
 
@@ -84,6 +85,10 @@ public class TabActivity extends AppCompatActivity
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
 
         //tabLayout.setVisibility(View.GONE);
+
+        TabHost tabHost = new TabHost(this);
+
+        //tabHost.addTab();
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

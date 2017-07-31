@@ -198,6 +198,8 @@ public class HsActivity_Login extends HsActivity_ZD
 
 			this.saveLastLoginData();
 
+			application.ClearData();
+
 
 			//将登录信息保存至本地缓存中
 			application.setLoginData(loginData);
@@ -208,6 +210,8 @@ public class HsActivity_Login extends HsActivity_ZD
 			intent.addCategory(getPackageName());
 			intent.putExtra(getString(R.string.comm_logindata),loginData);
 			startActivity(intent);
+
+
 
 			//将当前页自栈中移出。
 			finish();

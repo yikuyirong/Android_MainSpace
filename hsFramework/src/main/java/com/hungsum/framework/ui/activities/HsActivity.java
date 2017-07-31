@@ -228,11 +228,12 @@ public abstract class HsActivity extends FragmentActivity implements IHsActivity
 		return this.ShowInformation(text,  Toast.LENGTH_SHORT);
 	}
 
-	protected AlertDialog showAlert(String title, String positiveButtonTitle,
+	protected AlertDialog showAlert(String title,String message, String positiveButtonTitle,
 			OnClickListener positiveButtonListener, String negativeButtonTitle,
 			OnClickListener negativeButtonListener)
 	{
 		AlertDialog ad = new AlertDialog.Builder(this).setTitle(title)
+				.setMessage(message)
 				.setIcon(R.drawable.action_help)
 				.setPositiveButton(positiveButtonTitle, positiveButtonListener)
 				.setNegativeButton(negativeButtonTitle, negativeButtonListener)

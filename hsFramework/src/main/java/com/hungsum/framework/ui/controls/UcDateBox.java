@@ -57,7 +57,7 @@ public class UcDateBox extends UcTextBoxWithDialog
 		return mCurrentDate;
 	}
 
-	private void setControlValue(Date date)
+	public void setControlDate(Date date)
 	{
 		mCurrentDate = date;
 
@@ -86,9 +86,9 @@ public class UcDateBox extends UcTextBoxWithDialog
 				dateFormatString = "yyyy";
 			}
 
-			this.setControlValue(HsDate.TransStringToDate(dateFormatString , value.toString()));
+			this.setControlDate(HsDate.TransStringToDate(dateFormatString , value.toString()));
 
-			//super.setControlValue(HsDate.TransDateToString(dateFormatString, HsDate.TransStringToDate(dateFormatString , value.toString())));
+			//super.setControlDate(HsDate.TransDateToString(dateFormatString, HsDate.TransStringToDate(dateFormatString , value.toString())));
 
 		} catch (Exception e) {
 			super.setControlValue("");
@@ -118,7 +118,7 @@ public class UcDateBox extends UcTextBoxWithDialog
 			calendar.set(calendar.get(Calendar.YEAR), 1, 1);
 		}
 
-		this.setControlValue(calendar.getTime());
+		this.setControlDate(calendar.getTime());
 	}
 	
 	/*
@@ -179,7 +179,7 @@ public class UcDateBox extends UcTextBoxWithDialog
 								int monthOfYear, int dayOfMonth)
 						{
 							calendar.set(year, monthOfYear, dayOfMonth);
-							setControlValue(calendar.getTime());
+							setControlDate(calendar.getTime());
 						}
 					}, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH),
 					calendar.get(Calendar.DAY_OF_MONTH));
@@ -192,7 +192,7 @@ public class UcDateBox extends UcTextBoxWithDialog
 						public void onDateSet(DatePicker view, int year,
 								int monthOfYear, int dayOfMonth) {
 							calendar.set(year, monthOfYear, dayOfMonth);
-							setControlValue(calendar.getTime());
+							setControlDate(calendar.getTime());
 						}
 					}, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH),
 					calendar.get(Calendar.DAY_OF_MONTH));
@@ -204,7 +204,7 @@ public class UcDateBox extends UcTextBoxWithDialog
 						public void onDateSet(DatePicker view, int year,
 								int monthOfYear, int dayOfMonth) {
 							calendar.set(year, monthOfYear, dayOfMonth);
-							setControlValue(calendar.getTime());
+							setControlDate(calendar.getTime());
 						}
 					}, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH),
 					calendar.get(Calendar.DAY_OF_MONTH));

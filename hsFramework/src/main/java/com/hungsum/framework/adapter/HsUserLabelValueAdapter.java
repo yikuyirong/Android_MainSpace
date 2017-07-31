@@ -104,12 +104,24 @@ public class HsUserLabelValueAdapter extends BaseAdapter implements Filterable,O
 	{
 		return mDatas;
 	}
-	
-	public int getPostionByKey(String key)
+
+	public int getPosition(IHsLabelValue item)
 	{
 		for (int i = 0; i < mDatas.size() ; i++)
 		{
-			if(mDatas.get(i).getLabel().equals(key))
+			if(mDatas.get(i).equals(item))
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public int getPostionByLabel(String label)
+	{
+		for (int i = 0; i < mDatas.size() ; i++)
+		{
+			if(mDatas.get(i).getLabel().equals(label))
 			{
 				return i;
 			}

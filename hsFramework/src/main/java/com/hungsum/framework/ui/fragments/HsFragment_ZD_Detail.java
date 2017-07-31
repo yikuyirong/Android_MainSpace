@@ -240,7 +240,7 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 		super.removeItem(position);
 
 		((HsZDDetailAdapter)getAdapter()).remove(position);
-		
+
 		mItems.remove(position);
 
 		this.setSummaryText();
@@ -451,7 +451,7 @@ public abstract class HsFragment_ZD_Detail extends HsFragment_ZD_Annex<IHsLabelV
 		@Override
 		public void add(IHsLabelValue value)
 		{
-			int position = this.getPostionByKey(value.getLabel());
+			int position = this.getPostionByLabel(value.getLabel());
 			
 			if(position != -1)
 			{

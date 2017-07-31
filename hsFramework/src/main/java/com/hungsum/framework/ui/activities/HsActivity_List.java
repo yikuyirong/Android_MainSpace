@@ -3,18 +3,24 @@ package com.hungsum.framework.ui.activities;
 import java.io.Serializable;
 import java.util.List;
 
+import android.graphics.drawable.GradientDrawable;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.hungsum.framework.R;
 import com.hungsum.framework.componments.HsWSReturnObject;
 import com.hungsum.framework.ui.controls.UcListView;
 
 public abstract class HsActivity_List<T extends Serializable> extends HsActivity implements OnItemClickListener
 {
 	protected UcListView ucListView;
+
+	protected TextView ucSummary;
 	
 	//protected BaseAdapter adapter;
 	
@@ -31,12 +37,25 @@ public abstract class HsActivity_List<T extends Serializable> extends HsActivity
 		ucListView = new UcListView(this);
 		ucListView.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
 
+		ucSummary = new TextView(this);
+		ucSummary.setVisibility(View.GONE);
+
 		LinearLayout ll = new LinearLayout(this);
+		ll.setOrientation(LinearLayout.VERTICAL);
 		ll.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
 		ll.setBackgroundResource(getBackgroundResId());
+
+		ll.addView(ucSummary);
+
 		ll.addView(ucListView);
 
 		setContentView(ll);
+	}
+
+	protected void setSummaryText(CharSequence summary)
+	{
+		ucSummary.setVisibility((summary == null || summary.equals("")) ? View.GONE : View.VISIBLE);
+		ucSummary.setText(summary);
 	}
 
 	@Override

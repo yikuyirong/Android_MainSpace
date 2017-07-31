@@ -369,7 +369,7 @@ public abstract class HsActivity_List_DJ extends HsActivity_HsLabelValueList
 		}
 	}
 
-	protected String getActionPromptString(int actionId)
+	protected String getActionPromptTitle(int actionId)
 	{
 		String promptString = "";
 
@@ -402,12 +402,17 @@ public abstract class HsActivity_List_DJ extends HsActivity_HsLabelValueList
 		return promptString;
 	}
 
+	protected String getActionPromptMessage(int actionId)
+	{
+		return null;
+	}
+
 	protected void actionAfterMenuOrButtonClick(final int actionId, final IHsLabelValue object) throws Exception
 	{
 		if(doSomeThingByContextItemSelected(actionId, object))
 		{
 			//在工作线程中继续进行处理
-			showAlert(getActionPromptString(actionId), "确定", new OnClickListener()
+			showAlert(getActionPromptTitle(actionId),getActionPromptMessage(actionId), "确定", new OnClickListener()
 			{
 				@Override
 				public void onClick(DialogInterface dialog, int which)
